@@ -9,9 +9,8 @@
 }
 
 .top-container-1 {
-    @apply px-8
+    @apply mt-16 px-8 md:px-16 lg:px-24 mb-20 max-md:mt-8 max-md:text-base
 }
-
 .Title-div {
     @apply mb-12 mx-auto text-4xl font-bold text-center
 }
@@ -26,7 +25,7 @@
 }
 
 .button-all {
-    @apply bg-[#FFEA00] font-bold md:inline transform transition-transform duration-300 hover:scale-110 py-2 px-4 rounded-full
+    @apply bg-[#FFEA00] font-bold  md:inline transform transition-transform duration-300 hover:scale-110 py-2 px-4 rounded-full
 }
 
 .txt-shadow {
