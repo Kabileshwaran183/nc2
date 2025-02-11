@@ -4,7 +4,7 @@ export const About = () => {
     return (
         <section className="top-container-1">
                     <div id="about" className="py-16 bg-gray-50">
-                         <div className=" Title-div ">
+                        <div className=" Title-div ">
                     <h2 className="text-3xl font-bold text-gray-800 txt-shadow hover:text-[#FFF200]">About us</h2>
                 </div>
             <div className="flex justify-center md:justify-between items-center py-2 ">
