@@ -17,7 +17,7 @@ const Footer = () => {
                         3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                         className="relative block h-[600px] fill-white"></path>
                 </svg>
-                <div className="footwe-div">
+                <div className="grid lg:grid-cols-4 gap-20 md:grid-cols-4 grid-cols-2 px-8 md:px-16 lg:px-24 mb-6">
                     <div className="flex flex-col ">
                         <h2 className="text-[16px] text-white">Abouts us</h2>
                        <li className="foot-cont">home</li>
@@ -55,12 +55,12 @@ const Footer = () => {
 
 
                  <div>
-                        <h6 className=" copy">&copy; SK {Year}</h6>
+                        <h6 className=" text-gray-400 text-center ">&copy; SK {Year}</h6>
                     </div>
                  <div className="">
                    
 
-                    <div className="flex gap-5 justify-end items-start copy-icon ">
+                    <div className="flex gap-5 justify-end items-start pb-5 pr-10 ">
                              <a
                                 className="text-white hover:text-yellow-500 transform hover:scale-150 
                             transition-all duration-150 ease-in-out text-2xl" href="">

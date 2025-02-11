@@ -127,7 +127,7 @@ const Product = ({ data }) => {
                         : "Loading..."}
                         </Slider>
                 </div>
-                 <div className="grid grid-cols-1  lg:gap-6 md:gap-5 gap-7 items-center slid">
+                 <div className="grid grid-cols-1  lg:gap-6 md:gap-5 gap-7 items-center mt-8 mb-8">
                     <Slider {...setting}>
                     {data
                         ? data.map((d) => (
