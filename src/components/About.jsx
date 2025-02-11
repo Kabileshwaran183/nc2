@@ -21,7 +21,7 @@ export const About = () => {
                     <div>
                         <h2 className="text-3xl font-bold text-gray-800 mb-4">Natarajan and co</h2>
                         <p className="text-gray-600 leading-relaxed">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla facere eveniet perferendis delectus deleniti, voluptatum laboriosam officiis. Quae voluptate ipsam voluptates provident aliquam! Tempore vitae ab accusamus velit explicabo sapiente.
+                        With 21 years of expertise as a Proud <strong> UltraTech</strong> partner, we specialize in providing high-quality construction products. Committed to excellence, we offer a complete range of materials to support your construction needs.
                         </p>
                     </div>
                 </div>
