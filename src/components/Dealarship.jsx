@@ -93,14 +93,14 @@ const Dealership = () => {
       {
         lang.map((lang,i)=>(
           <SwiperSlide key={i}>
-        <div className="h-96  flex  "> 
+        <div className="h-80 flex ">
           <div className={`exp-card ${active === i && 'exp-card-active'}  `}>
             <div className='max-w-[10rem] mx-auto min-w-[10rem] min-h-[10rem] rounded object-fill  grid place-items-center '>
             <img src={lang.logo} alt="" />
               
             </div>
           
-            <h3 className="text-2xl font-bold text-gray-800 mb-10 hover:text-[#FFF200]">
+            <h3 className="text-2xl font-bold text-gray-800 mb-2 hover:text-[#FFF200]">
                       {lang.Name}
                     </h3>
                     <p className="text-gray-600 text-sm ">{lang.para}</p>
