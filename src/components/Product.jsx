@@ -82,7 +82,7 @@ const Product = ({ data }) => {
             {
                 breakpoint: 786,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                     initialSlide: 1,
                     autoplay: true,
