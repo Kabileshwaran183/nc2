@@ -30,26 +30,26 @@ const Contact = () => {
   return (
     <div className=' top-container-1 ' id='contact'>
 
-      <div className='flex flex-col contact-container bg-gray-50   text-black   ' id='contact'>
+      <div className='flex flex-col mx-auto px-8 md:px-16 lg:px-24 bg-gray-50   text-black   ' id='contact'>
         <h2 className='Title-div  hover:text-[#FFF200] txt-shadow '>contact me</h2>
-        <div className=' cont-titl-2'>
+        <div className=' flex flex-col md:flex-row items-center md:space-x-12 w-full'>
           <div className='  '>
             <h3>letz talt</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus illo, commodi laborum rem ex et quam doloribus, quae autem quas cumque blanditiis esse magnam odio? Quia eos culpa obcaecati vero.</p>
-          <div className=" contact-des">
-            <FaEnvelope className='inline-block  text-black margin-r'></FaEnvelope>
+          <div className="mb-4 mt-8">
+            <FaEnvelope className='inline-block  text-black mr-2'></FaEnvelope>
             <a href="mailto:vgssanjayboss@gmail.com" className='hover:border-b-2 hover:border-[#EFB036]'>
               vgssanjayboss@gmail.com
             </a>
           </div>
-          <div className=' contact-des1'>
-            <FaPhone className='inline-block  text-black margin-r'></FaPhone>
+          <div className='mb-4'>
+            <FaPhone className='inline-block  text-black mr-2'></FaPhone>
             <span> 9600417117</span>
              
           
           </div>
-          <div className='contact-des1'>
-            <FaMapMarkedAlt className='inline-block  text-black margin-r'></FaMapMarkedAlt>
+          <div className='mb-4'>
+            <FaMapMarkedAlt className='inline-block  text-black mr-2'></FaMapMarkedAlt>
             <span> karaikudi,tamilnadu</span>
              
            </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                 rows="5" 
                 placeholder='Any messages' />
               </div>
-              <button className='button-all' type='submit'>Submit</button>
+              <button className='x`' type='submit'>Submit</button>
             </form>
 
             <span>{result}</span>

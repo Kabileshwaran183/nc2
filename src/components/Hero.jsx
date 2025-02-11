@@ -3,17 +3,17 @@ import React from "react";
 const Hero = () => {
     return (
         <div className=" bg-[#000000a5] h-full ">
-            <div className="h-full flex justify-center items-center p-4 ">
+            <div className="h-full flex justify-center items-center ">
                 <div className="gap-4  bg-[#00000028] rounded-2xl w-full h-50  ">
-                    <div className="text-white  lg:pr-36 text-center texth  ">
+                    <div className="text-white  text-center mt-7 ">
                         <h1 className="text-5xl font-bold ">
                             UltraTech Building <span className="text-[#FFF200]"> Solutions...</span>
                         </h1>
-                        <p className="para ">
-                            14 PARUPPOORANI SOUTH, V.O.C R,SRI MUTHUMARIAMMAN KOVIL STREE,KARAIKUD
+                        <p className="mt-5 ">
+                            14 PARUPPOORANI SOUTH, V.O.C ROAD,SRI MUTHUMARIAMMAN KOVIL STREET,KARAIKUD
                         </p>
                         <button
-                            className="btn text-[#290849]"
+                            className="button-all mt-5 mb-5"
                         >
                             Reach us
                         </button>

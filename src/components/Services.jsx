@@ -2,8 +2,8 @@ import React from "react";
 
 export const Services = ({ data }) => {
   return (
-    <section className="top-container-1">
-        <div className=" conatiner-serv  ">
+    <section className="top-container-1"  id="servies">
+        <div className=" container-serv">
 
           <div className=" Title-div ">
             <h2 className="text-3xl font-bold txt-shadow text-gray-800 hover:text-[#FFF200] ">Dealership</h2>
