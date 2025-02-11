@@ -13,27 +13,27 @@ const Contact = () => {
            
           <div className=''>
             <FaPhone className='inline-block  text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href='Callto:9600417117'>04565-232145 </a></span> 
+            <span><a href="tel:+91 04565-232145">04565-232145 </a></span> 
           </div>
            <div className=''>
             <FaPhone className='inline-block  text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href='Callto:9600417117'>04565-401379 </a></span> 
+            <span><a href="tel:+91 04565-401379">04565-401379 </a></span> 
           </div>
             <div className=' '>
             <FaPhone className='inline-block text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href='Callto:9600417117'> 9842611032 </a></span>
+            <span><a href='tel:+91 9842611032'> 9842611032 </a></span>
             </div>
             <div className=''>
             <FaPhone className='inline-block text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href='Callto:9600417117'>8667408717</a></span>
+            <span><a href='tel:+91 8667408717'>8667408717</a></span>
             </div>
             <div className=''>
             <FaPhone className='inline-block  text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href='Callto:9600417117'> 9629789197</a></span>
+            <span><a href='tel:+91 9629789197'> 9629789197</a></span>
             </div>
             <div className='mb-4'>
             <FaPhone className='inline-block text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href='Callto:9600417117'> 9788766490 </a></span>
+            <span><a href='tel:+91 9788766490'> 9788766490 </a></span>
             </div>
           </div>
     

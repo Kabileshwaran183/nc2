@@ -32,10 +32,10 @@ const Footer = () => {
                         <h2 className="text-lg text-white">
                             PhoneNumber
                         </h2>
-                        <li className="foot-cont">9842611032</li>
-                        <li className="foot-cont">8667408717</li>
-                        <li className="foot-cont">9788766490</li>
-                        <li className="foot-cont">9629789197</li>
+                       <a href='tel:+91 9842611032' className="foot-cont"> 9842611032 </a>
+                      <a href='tel:+91 8667408717' className="foot-cont">8667408717</a>
+                       <a href='tel:+91 9629789197' className="foot-cont"> 9629789197</a>
+                        <a href='tel:+91 9788766490' className="foot-cont"> 9788766490 </a>
                     </div>
                     <div className="mb-4 md:mb-0">
                       <h2 className="text-lg text-white">
@@ -50,8 +50,8 @@ const Footer = () => {
                         <h2 className="text-lg text-white">
                             Landline
                         </h2>
-                        <a  href="tel:+91 9600417117" className="foot-cont">9842611032</a>
-                        <li className="foot-cont">8667408717</li>
+                        <a href="tel:+91 04565-401379" className="foot-cont">04565-401379 </a>
+                        <a href="tel:+91 04565-232145" className="foot-cont">04565-232145 </a>
                         
                     </div>
                 </div>
