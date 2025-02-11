@@ -11,13 +11,13 @@ const Dealership = () => {
   const lang =[
     
     {
-        Name:'Ultratech Buliding solution',
+        Name:'Ultratech',
         logo:'/Bg/ultra.png',
         para:"Authorised Dealer of ultratech India's no.1 Cement"
         
     },
     {
-        Name:'Birla white cement and wall care putty',
+        Name:'Birla',
         logo:'/Bg/WHIRE BG.png',
         para:"Authorised Dealer of Birla White and Wallcare Putty"   
     },
@@ -51,7 +51,7 @@ const Dealership = () => {
         <div className="container ">
               <h2 className='text-4xl font-bold text-center mb-10 txt-shadow text-gray-800 hover:text-[#FFF200]'>Dealership</h2>
           <div className='exp-div-card text-black'>
-      <div className="md:min-w-2xl lg:min-w-28  xl:min-w-5xl min-w-10 ">
+      <div className="min-w-10 ">
         <Swiper
       
       freeMode={true}
@@ -80,7 +80,7 @@ const Dealership = () => {
            slidesPerView:1,
         },
          1024:{
-         spaceBetween:80,
+         spaceBetween:40,
          slidesPerView:3,
         },
           1280:{
@@ -93,10 +93,10 @@ const Dealership = () => {
       {
         lang.map((lang,i)=>(
           <SwiperSlide key={i}>
-        <div className="h-80  flex "> 
+        <div className="h-80 w-90 flex "> 
           <div className={`exp-card ${active === i && 'exp-card-active transition-all duration-300 group transform hover:-translate-y-2 '} shadow-2xl`}>
             <div className=' max-w-[10rem] mx-auto min-w-[10rem] min-h-[10rem] rounded-md grid place-items-center'>
-            <img src={lang.logo} alt="" />
+            <img src={lang.logo} alt="#logo" />
               
             </div>
           
