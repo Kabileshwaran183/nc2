@@ -52,7 +52,7 @@ const Dealership = () => {
               <h2 className='text-4xl font-bold text-center mb-10 hover:text-[#EFB036]'>Dealership</h2>
           <div className='exp-div-card text-black'>
       <div className="md:min-w-2xl lg:min-w-28  xl:min-w-5xl min-w-10 ">
-         <Swiper
+        <Swiper
       
       freeMode={true}
       onSlideChange={(cur) => setActive(cur.realIndex)}
@@ -96,7 +96,7 @@ const Dealership = () => {
         <div className="h-80  flex "> 
           <div className={`exp-card ${active === i && 'exp-card-active transition-all duration-300 group transform hover:-translate-y-2 '} shadow-2xl`}>
             <div className=' max-w-[10rem] mx-auto min-w-[10rem] min-h-[10rem] rounded-md grid place-items-center'>
-             <img src={lang.logo} alt="" />
+            <img src={lang.logo} alt="" />
               
             </div>
           
