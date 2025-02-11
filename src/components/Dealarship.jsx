@@ -53,7 +53,6 @@ const Dealership = () => {
           <div className='exp-div-card text-black'>
       <div className="md:min-w-2xl lg:min-w-3xl  xl:minw-5xl min-w-8">
          <Swiper
-        <Swiper
       
       freeMode={true}
       onSlideChange={(cur) => setActive(cur.realIndex)}
@@ -98,8 +97,6 @@ const Dealership = () => {
           <div className={`exp-card ${active === i && 'exp-card-active'}  `}>
             <div className=' max-w-[10rem] mx-auto min-w-[10rem] min-h-[10rem] rounded-md grid place-items-center'>
              <img src={lang.logo} alt="" />
-            <div className='max-w-[10rem] mx-auto min-w-[10rem] min-h-[10rem] rounded object-fill  grid place-items-center '>
-            <img src={lang.logo} alt="" />
               
             </div>
           
