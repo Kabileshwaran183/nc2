@@ -1,0 +1,60 @@
+{
+    "Products": [
+        {
+            "img": "/Bg/ultra.png",
+            "title": "Ultratech"
+        },
+        {
+            "img": "/Bg/WHIRE BG.png",
+            "title": "Birla"
+        },
+        {
+            "img": "/Bg/WALLCARE BG.png",
+            "title": "Birla wall care"
+        },
+          {
+            "img": "/Bg/ULTRATECH BG.png",
+            "title": "Birla"
+        },
+        {
+            "img": "/assets/araldite.jpg",
+            "title": "Araldite"
+        },
+        {
+            "img": "/Bg/FIXIT BG.png",
+            "title": "dr fixit"
+        },
+        {
+            "img": "/Bg/myk.jpg",
+            "title": "myk"
+        },
+        {
+            "img": "/Bg/ROFF BG.png",
+            "title": "roff"
+        }
+    ],
+    "Services": [
+        {
+            "icon": "/Bg/ultra.png",
+            "name": "ultratech Building solution",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+        },
+        {
+            "icon": "/assets/birla-white-wallcare-putty.png",
+            "name": "Birla white cement",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+        },
+        {
+            "icon": "/assets/MYK BG 42.png",
+            "name": "myk laticrete",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+        }
+        
+       
+       
+    ],
+    "Header": {
+        "title": "We are a Landing Page",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    }
+}
