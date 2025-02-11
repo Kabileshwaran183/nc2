@@ -51,7 +51,7 @@ const Dealership = () => {
         <div className="container ">
               <h2 className='text-4xl font-bold text-center mb-10 hover:text-[#EFB036]'>Dealership</h2>
           <div className='exp-div-card text-black'>
-      <div className="md:min-w-2xl lg:min-w-3xl  xl:minw-5xl min-w-8">
+      <div className="md:min-w-20 lg:min-w-36   min-w-8">
          <Swiper
       
       freeMode={true}
@@ -77,10 +77,10 @@ const Dealership = () => {
         },
          768:{
            spaceBetween:20,
-           slidesPerView:3,
+           slidesPerView:1,
         },
          1024:{
-         spaceBetween:80,
+         spaceBetween:50,
          slidesPerView:3,
         },
           1280:{
