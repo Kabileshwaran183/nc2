@@ -66,22 +66,22 @@ const Footer = () => {
                     <div className="flex gap-5 justify-end items-start pb-5 pr-10 ">
                              <a 
                                 className="text-white hover:text-yellow-500 transform hover:scale-150 
-                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/6385217117?text=hello how can help you" target="_2blank">
+                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/6385217117?text=hello how can help you" target="_blank">
                                 <FaWhatsapp />
                             </a>
                             <a
                                 className="text-white hover:text-yellow-500 transform hover:scale-150
-                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/91+ 9600417117?text=hello how can help you" target="blank">
+                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/9600417117?text=hello how can help you" target="_blank">
                                 <FaLinkedinIn />
                             </a>
                             <a
                                 className="text-white hover:text-yellow-500 transform hover:scale-150
-                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/9600417117?text=hello how can help you">
+                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/9600417117?text=hello how can help you" target="_blank">
                                 <FaTwitter />
                             </a>
                             <a
                                 className="text-white hover:text-yellow-500 transform hover:scale-150
-                            transition-all duration-150 ease-in-out text-2xl" href="">
+                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/9600417117?text=hello how can help you"  target="_blank">
                                 <FaInstagram />
                             </a>
                     </div>
