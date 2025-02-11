@@ -13,7 +13,7 @@ const Dealership = () => {
     {
         Name:'Ultratech Buliding solution',
         logo:'/Bg/ultra.png',
-        para:"Authorised Dealer of ultratech INDIA'S NO.1 Cement"
+        para:"Authorised Dealer of ultratech India's no.1 Cement"
         
     },
     {
@@ -51,7 +51,7 @@ const Dealership = () => {
         <div className="container ">
               <h2 className='text-4xl font-bold text-center mb-10 hover:text-[#EFB036]'>Dealership</h2>
           <div className='exp-div-card text-black'>
-      <div className="md:min-w-2xl lg:min-w-3xl  xl:minw-5xl min-w-8">
+      <div className="md:min-w-2xl lg:min-w-28  xl:min-w-5xl min-w-10 ">
          <Swiper
       
       freeMode={true}
@@ -100,7 +100,7 @@ const Dealership = () => {
               
             </div>
           
-            <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#FFF200]">
+            <h3 className="text-2xl lg:text-lg font-bold text-gray-800 lg:mb-1 mb-6 hover:text-[#FFF200]">
                       {lang.Name}
                     </h3>
                     <p className="text-gray-600 text-sm ">{lang.para}</p>
