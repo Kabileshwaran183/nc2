@@ -17,39 +17,42 @@ const Footer = () => {
                         3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                         className="relative block h-[600px] fill-white"></path>
                 </svg>
-                <div className="grid lg:grid-cols-4 gap-20 md:grid-cols-4 grid-cols-2 px-8 md:px-16 lg:px-24 mb-6">
+                <div className="grid lg:grid-cols-4 gap-20 md:grid-cols-4 grid-cols-2 px-1 md:px-4 lg:px-24 mb-4 ">
                     <div className="flex flex-col ">
-                        <h2 className="text-[16px] text-white">Abouts us</h2>
+                        <h2 className="text-lg text-white">Abouts us</h2>
                        <li className="foot-cont">home</li>
                         <li className="foot-cont">abouts</li>
                         <li className="foot-cont">products</li>
+                        <li className="foot-cont">Dealership</li>
                     </div>
 
-                    <div>
-                        <h2 className="text-[16px] text-white">
-                            branches
-                        </h2>
-                        <li className="foot-cont">Selva ganesh agency</li>
-                        <li className="foot-cont">madurai</li>
-                        
-                    </div>
+
 
                     <div>
-                        <h2 className="text-[16px] text-white">
-                            Creativity
+                        <h2 className="text-lg text-white">
+                            PhoneNumber
                         </h2>
-                        <li className="foot-cont">Guidlines & Ideas</li>
-                        <li className="foot-cont">Tips & Tricks</li>
-                        <li className="foot-cont">photography</li>
+                        <li className="foot-cont">9842611032</li>
+                        <li className="foot-cont">8667408717</li>
+                        <li className="foot-cont">9788766490</li>
+                        <li className="foot-cont">9629789197</li>
                     </div>
                     <div className="mb-4 md:mb-0">
-                      <h2 className="text-[16px] text-white">
+                      <h2 className="text-lg text-white">
                             contact
                         </h2>
-                        <p className="foot-cont">Karaikudinatarajan@gmail.com</p>
+                        <li className="foot-cont ">Karaikudinatarajan@gmail.com</li>
                         <p className="foot-cont">Phone: +1 113-456-7890 </p>
                         <p className="foot-cont">karaikudi </p>
                        
+                    </div>
+                                        <div>
+                        <h2 className="text-lg text-white">
+                            Landline
+                        </h2>
+                        <li className="foot-cont">9842611032</li>
+                        <li className="foot-cont">8667408717</li>
+                        
                     </div>
                 </div>
 
