@@ -93,8 +93,8 @@ const Dealership = () => {
       {
         lang.map((lang,i)=>(
           <SwiperSlide key={i}>
-        <div className="h-80  flex  "> 
-          <div className={`exp-card ${active === i && 'exp-card-active bg-slate-50 transition-all duration-300 group transform hover:-translate-y-2 '} shadow-2xl`}>
+        <div className="h-80  flex "> 
+          <div className={`exp-card ${active === i && 'exp-card-active transition-all duration-300 group transform hover:-translate-y-2 '} shadow-2xl`}>
             <div className=' max-w-[10rem] mx-auto min-w-[10rem] min-h-[10rem] rounded-md grid place-items-center'>
              <img src={lang.logo} alt="" />
               
