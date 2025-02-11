@@ -35,3 +35,7 @@
 .foot-cont {
     @apply list-none text-[14px] text-gray-500
 }
+
+html{
+    scroll-behavior: smooth;
+}
