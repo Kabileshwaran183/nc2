@@ -13,11 +13,11 @@ const Contact = () => {
            
           <div className=''>
             <FaPhone className='inline-block  text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href="tel:+91 04565-232145">04565-232145 </a></span> 
+            <span><a href="tel:04565-232145">04565-232145 </a></span> 
           </div>
            <div className=''>
             <FaPhone className='inline-block  text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href="tel:+91 04565-401379">04565-401379 </a></span> 
+            <span><a href="tel: 04565-401379">04565-401379 </a></span> 
           </div>
             <div className=' '>
             <FaPhone className='inline-block text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>

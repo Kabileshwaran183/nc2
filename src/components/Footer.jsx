@@ -50,8 +50,8 @@ const Footer = () => {
                         <h2 className="text-lg text-white">
                             Landline
                         </h2>
-                        <a href="tel:+91 04565-401379" className="foot-cont">04565-401379 </a>
-                        <a href="tel:+91 04565-232145" className="foot-cont">04565-232145 </a>
+                        <a href="tel:04565-401379" className="foot-cont">04565-401379 </a>
+                        <a href="tel:04565-232145" className="foot-cont">04565-232145 </a>
                         
                     </div>
                 </div>
