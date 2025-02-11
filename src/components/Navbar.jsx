@@ -35,7 +35,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <span
-                    className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center text-amber-300 rounded-xl cursor-pointer"
+                    className="text-xl mdl:hidden bg-[#00000048] w-10 h-10 inline-flex items-center justify-center text-white rounded-xl cursor-pointer"
                     onClick={() => setShowMenu(!showMenu)}
                 >
                     <FiMenu />
@@ -48,11 +48,11 @@ const Navbar = () => {
                     >
                         <div className="flex flex-col gap-8 py-12 relative">
                             <ul className="flex flex-col text- gap-4 pl-2 py-4">
-                            <li><a href="/home" onClick={()=>setShowMenu(!showMenu)} className= "181818] hover:text-white">Home</a></li>
-                            <li><a href="#about" onClick={()=>setShowMenu(!showMenu)} className= "text-[#181818] hover:text-white">About </a></li>
-                            <li><a href="#Products" onClick={()=>setShowMenu(!showMenu)} className= "text-[#181818] hover:text-white">Products</a></li>
-                            <li><a href="#servies" onClick={()=>setShowMenu(!showMenu)} className= "text-[#181818] hover:text-white">Dealership</a></li>
-                            <li><a href="#contact" onClick={()=>setShowMenu(!showMenu)} className= "text-[#181818] hover:text-white">Contacts</a></li>
+                            <li><a href="/home" className= "181818] hover:text-white">Home</a></li>
+                            <li><a href="#about" className= "text-[#181818] hover:text-white">About </a></li>
+                            <li><a href="#Products" className= "text-[#181818] hover:text-white">Products</a></li>
+                            <li><a href="#servies" className= "text-[#181818] hover:text-white">Dealership</a></li>
+                            <li><a href="#contact" className= "text-[#181818] hover:text-white">Contacts</a></li>
                             </ul>
                             <div className="flex flex-col border-2 mx-3 border-black rounded-xl bg-[rgba(32,32,31,0.58)] p-8">
                                 <h2 className="text-base uppercase font-titleFont mb-4 text-white">
