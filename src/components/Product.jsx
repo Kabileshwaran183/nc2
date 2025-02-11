@@ -43,7 +43,7 @@ const Product = ({ data }) => {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                     autoplay: true,
                     speed: 2000,
@@ -94,7 +94,7 @@ const Product = ({ data }) => {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                     autoplay: true,
                     speed: 2000,
@@ -114,13 +114,13 @@ const Product = ({ data }) => {
                     <h2 className="text-3xl font-bold text-gray-800 hover:text-[#FFF200] txt-shadow ">Products</h2>
                 </div>
                 
-                <div className="grid grid-cols-1  lg:gap-6 md:gap-5 gap-7 items-center ">
+                <div className="grid grid-cols-1 lg:gap-6 md:gap-5 gap-7 items-center ">
                     <Slider {...settings}>
                     {data
                         ? data.map((d) => (
                             <div className="flex flex-col  items-center text-center  ">
                                 <div className="">
-                                    <img src={d.img}  className="h-[150px] w-[150px] bg-[#f5f7fa] rounded shadow-lg hover:shadow-2xl transition-all duration-300 group transform hover:-translate-y-2   object-contain "/>
+                                    <img src={d.img}  className=" h-[70px] w-[70px]  md:h-[150px] md:w-[150px] bg-[#f5f7fa] rounded shadow-lg hover:shadow-2xl transition-all duration-300 group transform hover:-translate-y-2   object-contain "/>
                                 </div>
                             </div>
                         ))
@@ -133,7 +133,7 @@ const Product = ({ data }) => {
                         ? data.map((d) => (
                             <div className="flex flex-col items-center text-center  ">
                                 <div className="">
-                                    <img src={d.img}  className="h-[150px] w-[150px] bg-[#f5f7fa] rounded shadow-lg hover:shadow-2xl transition-all duration-300 group transform hover:-translate-y-2   object-contain "/>
+                                    <img src={d.img}  className="h-[70px] w-[70px]  md:h-[150px] md:w-[150px] bg-[#f5f7fa] rounded shadow-lg hover:shadow-2xl transition-all duration-300 group transform hover:-translate-y-2   object-contain "/>
                                 </div>
                             </div>
                         ))
