@@ -77,10 +77,10 @@ const Dealership = () => {
         },
          768:{
            spaceBetween:20,
-           slidesPerView:3,
+           slidesPerView:1,
         },
          1024:{
-         spaceBetween:80,
+         spaceBetween:50,
          slidesPerView:3,
         },
           1280:{
