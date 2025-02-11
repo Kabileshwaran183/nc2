@@ -52,7 +52,7 @@ const Dealership = () => {
               <h2 className='text-4xl font-bold text-center mb-10 hover:text-[#EFB036]'>Dealership</h2>
           <div className='exp-div-card text-black'>
       <div className="md:min-w-2xl lg:min-w-3xl  xl:minw-5xl min-w-8">
-        <Swiper
+         <Swiper
       
       freeMode={true}
       onSlideChange={(cur) => setActive(cur.realIndex)}
@@ -80,7 +80,7 @@ const Dealership = () => {
            slidesPerView:1,
         },
          1024:{
-         spaceBetween:50,
+         spaceBetween:80,
          slidesPerView:3,
         },
           1280:{
@@ -93,14 +93,14 @@ const Dealership = () => {
       {
         lang.map((lang,i)=>(
           <SwiperSlide key={i}>
-        <div className="h-80 flex ">
-          <div className={`exp-card ${active === i && 'exp-card-active'}  `}>
-            <div className='max-w-[10rem] mx-auto min-w-[10rem] min-h-[10rem] rounded object-fill  grid place-items-center '>
-            <img src={lang.logo} alt="" />
+        <div className="h-80  flex  "> 
+          <div className={`exp-card ${active === i && 'exp-card-active bg-slate-50 transition-all duration-300 group transform hover:-translate-y-2 '} shadow-2xl`}>
+            <div className=' max-w-[10rem] mx-auto min-w-[10rem] min-h-[10rem] rounded-md grid place-items-center'>
+             <img src={lang.logo} alt="" />
               
             </div>
           
-            <h3 className="text-2xl font-bold text-gray-800 mb-2 hover:text-[#FFF200]">
+            <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#FFF200]">
                       {lang.Name}
                     </h3>
                     <p className="text-gray-600 text-sm ">{lang.para}</p>

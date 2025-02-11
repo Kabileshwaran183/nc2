@@ -57,7 +57,7 @@ html {
 }
 
 .exp-card-active {
-    @apply h-96
+    @apply h-80 duration-700 delay-100
 }
 
 

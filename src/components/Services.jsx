@@ -13,7 +13,7 @@ export const Services = ({ data }) => {
               ? data.map((d, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center bg-slate-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group transform hover:-translate-y-2"
+                  className="flex flex-col items-center  hbg-slate-50 rounded-2xl shadow-lgover:shadow-2xl transition-all duration-300 group transform hover:-translate-y-2"
                 >
 
                   <div className=" w-50 h-40 flex object-fill items-center justify-center rounded-full mb-1 transition-all duration-300">
