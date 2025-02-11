@@ -20,7 +20,7 @@ const Navbar = () => {
             style={{ backgroundColor: isScrolled ?  "rgb(255, 242, 0)":"rgba(255, 242, 0, 0.0)" }}
         >
                 <div className={`h-16  px-3 ${isScrolled ? "text-[#231F20]":"text-white"}   hidden  sm:block`}>
-                    <ul className=" flex gap-8 font-bold text-xl  ">
+                    <ul className=" flex gap-10 justify-center py-5 font-bold text-xl  ">
                         <li><a href="#" className={` ${isScrolled ?"hover:text-[white]":"hover:text-[#FFF200]"} `}>Home</a></li>
                         <li><a href="#" className={` ${isScrolled ?"hover:text-[white]":"hover:text-[#FFF200]"} `}>About </a></li>
                         <li><a href="#" className={` ${isScrolled ?"hover:text-[white]":"hover:text-[#FFF200]"} `}>Products</a></li>
