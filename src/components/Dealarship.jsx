@@ -49,7 +49,7 @@ const Dealership = () => {
      <section>
        <div className="top-container-1 ">
         <div className="container ">
-              <h2 className='text-4xl font-bold text-center mb-10 hover:text-[#EFB036]'>Dealership</h2>
+              <h2 className='text-4xl font-bold text-center mb-10 txt-shadow text-gray-800 hover:text-[#FFF200]'>Dealership</h2>
           <div className='exp-div-card text-black'>
       <div className="md:min-w-2xl lg:min-w-28  xl:min-w-5xl min-w-10 ">
          <Swiper
@@ -100,7 +100,7 @@ const Dealership = () => {
               
             </div>
           
-            <h3 className="text-2xl lg:text-lg font-bold text-gray-800 lg:mb-1 mb-6 hover:text-[#FFF200]">
+            <h3 className="text-2xl lg:text-lg font-bold text-gray-800 lg:mb-1 mb-6 group-hover:text-[#FFF200]">
                       {lang.Name}
                     </h3>
                     <p className="text-gray-600 text-sm ">{lang.para}</p>
