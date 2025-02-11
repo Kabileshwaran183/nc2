@@ -6,6 +6,7 @@ import JsonData from "./components/Constants/Product.json"
 import Footer from "./components/Footer"
 import { Services } from "./components/Services"
 import Hero from "./components/Hero"
+import Dealership from "./components/Dealarship"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       </div>
           <About />
           <Product data={JsonData.Products}/>
+          <Dealership/>
           <Services data={JsonData.Services} />
           <Contact />
           <Footer/>
