@@ -80,7 +80,7 @@ const Contact = () => {
                 rows="5" 
                 placeholder='Any messages' />
               </div>
-              <button className='x`' type='submit'>Submit</button>
+              <button className='button-all' type='submit'>Submit</button>
             </form>
 
             <span>{result}</span>
