@@ -66,7 +66,7 @@ const Footer = () => {
                     <div className="flex gap-5 justify-end items-start pb-5 pr-10 ">
                              <a 
                                 className="text-white hover:text-yellow-500 transform hover:scale-150 
-                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/9600417117?text=hello how can help you">
+                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/6358217117?text=hello how can help you">
                                 <FaWhatsapp />
                             </a>
                             <a
