@@ -28,9 +28,28 @@
             "img": "/Bg/myk.jpg",
             "title": "myk"
         },
+         {
+            "img": "/assets/ultratech buliding product.jpg"
+           
+        },
+         {
+            "img": "/Bg/FOSROC BG.png"
+           
+        },
+         {
+            "img": "/assets/tenax.png"
+          
+        },
+         {
+            "img": "/assets/sintex.jpeg"
+          
+        },
+         {
+            "img": "/assets/pad logo.jpg"
+          
+        },
         {
-            "img": "/Bg/ROFF BG.png",
-            "title": "roff"
+            "img": "/Bg/ROFF BG.png"            
         }
     ],
     "Services": [
