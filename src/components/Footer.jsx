@@ -1,4 +1,4 @@
-import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
 
@@ -64,19 +64,19 @@ const Footer = () => {
                    
 
                     <div className="flex gap-5 justify-end items-start pb-5 pr-10 ">
-                             <a
+                             <a 
                                 className="text-white hover:text-yellow-500 transform hover:scale-150 
-                            transition-all duration-150 ease-in-out text-2xl" href="">
-                                <FaGithub />
+                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/9600417117?text=hello how can help you">
+                                <FaWhatsapp />
                             </a>
                             <a
                                 className="text-white hover:text-yellow-500 transform hover:scale-150
-                            transition-all duration-150 ease-in-out text-2xl" href="">
+                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/9600417117?text=hello how can help you">
                                 <FaLinkedinIn />
                             </a>
                             <a
                                 className="text-white hover:text-yellow-500 transform hover:scale-150
-                            transition-all duration-150 ease-in-out text-2xl" href="">
+                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/9600417117?text=hello how can help you">
                                 <FaTwitter />
                             </a>
                             <a
