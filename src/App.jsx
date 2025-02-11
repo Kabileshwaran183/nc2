@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-    <div className="kabi">
+    <div >
     <div className="h-[650px] relative">
       <div className="bg-black">
         <img src="assets/natarajan and co mrng.jpg" alt="bg"
