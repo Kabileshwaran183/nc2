@@ -44,21 +44,21 @@ const Navbar = () => {
                 {showMenu && (
                     <div 
                     className="
-                    z-50 w-[60%] h-screen overflow-scroll absolute top-0 left-0 p-4 scrollbar-hide bg-[rgba(32,32,31,0.68)]"
+                    z-50 w-[60%] md:w-[45%] md:hidden h-screen overflow-scroll absolute top-0 left-0 p-4 scrollbar-hide bg-[#FFF200]"
                     >
                         <div className="flex flex-col gap-8 py-12 relative">
-                            <ul className="flex flex-col gap-4 py-4">
-                            <li><a href="/home" className= "hover:text-[#FFF200] text-white">Home</a></li>
-                            <li><a href="#about" className= "hover:text-[#FFF200]  text-white">About </a></li>
-                            <li><a href="#Products" className= "hover:text-[#FFF200] text-white">Products</a></li>
-                            <li><a href="#servies" className= "hover:text-[#FFF200] text-white">Dealership</a></li>
-                            <li><a href="#contact" className= "hover:text-[#FFF200] text-white">Contacts</a></li>
+                            <ul className="flex flex-col text- gap-4 pl-2 py-4">
+                            <li><a href="/home" className= "181818] hover:text-white">Home</a></li>
+                            <li><a href="#about" className= "text-[#181818] hover:text-white">About </a></li>
+                            <li><a href="#Products" className= "text-[#181818] hover:text-white">Products</a></li>
+                            <li><a href="#servies" className= "text-[#181818] hover:text-white">Dealership</a></li>
+                            <li><a href="#contact" className= "text-[#181818] hover:text-white">Contacts</a></li>
                             </ul>
-                            <div className="flex flex-col border-2 border-black rounded-xl bg-[rgba(32,32,31,0.58)] p-8">
-                                <h2 className="text-base uppercase font-titleFont mb-4 text-amber-200">
+                            <div className="flex flex-col border-2 mx-3 border-black rounded-xl bg-[rgba(32,32,31,0.58)] p-8">
+                                <h2 className="text-base uppercase font-titleFont mb-4 text-white">
                                     Find us on
                                 </h2>
-                                <div className="flex gap-4 text-amber-200">
+                                <div className="flex gap-4 text-white">
                                     <span className="bannerIcon">
                                         <BsWhatsapp />
                                     </span>
@@ -73,7 +73,7 @@ const Navbar = () => {
                             <span
                                 onClick={() => setShowMenu(false)}
                                 className="
-                    absolute top-2 right-4 text-amber-200 hover:text-designColor duration-300 text-xl cursor-pointer"
+                    absolute top-2 right-4 text-black hover:text-designColor duration-300 text-xl cursor-pointer"
                             >
                                 <MdClose />
                             </span>
