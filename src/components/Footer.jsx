@@ -76,12 +76,12 @@ const Footer = () => {
                             </a>
                             <a
                                 className="text-white hover:text-yellow-500 transform hover:scale-150
-                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/9600417117?text=hello how can help you" target="_blank">
+                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/91+9842611032?text=hello how can help you" target="_blank">
                                 <FaTwitter />
                             </a>
                             <a
                                 className="text-white hover:text-yellow-500 transform hover:scale-150
-                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/9600417117?text=hello how can help you"  target="_blank">
+                            transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/91+8667408717?text=hello how can help you"  target="_blank">
                                 <FaInstagram />
                             </a>
                     </div>
