@@ -27,11 +27,11 @@ const Navbar = () => {
             >
                 <div className={` h-10 xl:h-12  px ${isScrolled ? "text-[#1f1d1dec]" : "text-white"}  hidden  md:block`}>
                     <ul className=" flex gap-10 justify-center py-2 font-bold text-lg xl:text-2xl  ">
-                        <li><a href="/" className={` ${isScrolled ? "hover:text-[#1f1d1d]" : "hover:text-[#FFF200]"} our-font `}>Home</a></li>
-                        <li><a href="#about" className={` ${isScrolled ? "hover:text-[#1f1d1d]" : "hover:text-[#FFF200]"} our-font `}>About </a></li>
-                        <li><a href="#Products" className={` ${isScrolled ? "hover:text-[#1f1d1d]" : "hover:text-[#FFF200]"} our-font`}>Products</a></li>
-                        <li><a href="#Dealership" className={` ${isScrolled ? "hover:text-[#1f1d1d]" : "hover:text-[#FFF200] "} our-font `}>Dealership</a></li>
-                        <li><a href="#contact" className={` ${isScrolled ? "hover:text-[#1f1d1d]" : "hover:text-[#FFF200]"} our-font`}>Contacts</a></li>
+                        <li><a href="/" className={` ${isScrolled ? "hover:text-[#f5f7f6]" : "hover:text-[#FFF200]"} our-font `}>Home</a></li>
+                        <li><a href="#about" className={` ${isScrolled ? "hover:text-[#f5f7f6]" : "hover:text-[#FFF200]"} our-font `}>About </a></li>
+                        <li><a href="#Products" className={` ${isScrolled ? "hover:text-[#f5f7f6]" : "hover:text-[#FFF200]"} our-font`}>Products</a></li>
+                        <li><a href="#Dealership" className={` ${isScrolled ? "hover:text-[#f5f7f6]" : "hover:text-[#FFF200] "} our-font `}>Dealership</a></li>
+                        <li><a href="#contact" className={` ${isScrolled ? "hover:text-[#f5f7f6]" : "hover:text-[#FFF200]"} our-font`}>Contacts</a></li>
                     </ul>
                 </div>
                 <span
