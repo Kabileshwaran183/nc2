@@ -83,7 +83,7 @@ const Projectslide = () => {
    
      <section>
        
-      <div className="mt-16 px-0 md:px-16 lg:px-24 mb-20 max-md:mt-8 max-md:text-base " id='Project'>
+      <div className="top-container-1" id='Project'>
         <div className="mx-auto px-8 md:px-16 lg:px-24 ">
             <h3 className='title-text'>Achievements</h3>
 

@@ -107,7 +107,7 @@ const Product = ({ data }) => {
 
 
     return (
-        <section className="overflow-hidden">
+        <section className="overflow-hidden ">
         <div id="Products" className="text-center  ">
             <div className=" ">
                 <div className=" Title-div ">
