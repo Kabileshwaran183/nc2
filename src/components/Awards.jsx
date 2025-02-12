@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Autoplay } from 'swiper/modules';
 
 const Exp =[
     {
@@ -41,16 +42,40 @@ const Exp =[
 
 
 ];
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, background: "#FFF200",display: "block", borderRadius:"100%" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style,background: "#FFF200",display: "block", borderRadius:"100%" }}
+      onClick={onClick}
+    />
+  );
+}
 
 const Projectslide = () => {
     var settings = {
-    dots:false,
-    infinite: false,
+    dots:true,
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    speed: 1000,
-    autoplaySpeed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    focusOnSelect: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   
     responsive: [
       {
@@ -59,7 +84,9 @@ const Projectslide = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          nextArrow: <SampleNextArrow />,
+          prevArrow: <SamplePrevArrow />
+          
         }
       },
       {
@@ -67,14 +94,15 @@ const Projectslide = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2
+           infinite: true,
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+           infinite: true,
         }
       }
     ]
@@ -83,7 +111,7 @@ const Projectslide = () => {
    
      <section>
        
-      <div className="top-container-1" id='Project'>
+      <div className="top-container-1 " id='Project'>
         <div className="mx-auto px-8 md:px-16 lg:px-24 ">
             <h3 className='title-text'>Achievements</h3>
 

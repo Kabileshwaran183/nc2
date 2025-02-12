@@ -27,10 +27,10 @@ const Navbar = () => {
             >
                 <div className={` h-10 xl:h-12  px ${isScrolled ? "text-[#231F20]" : "text-white"}  hidden  md:block`}>
                     <ul className=" flex gap-10 justify-center py-2 font-bold text-lg xl:text-2xl  ">
-                        <li><a href="/home" className={` ${isScrolled ? "hover:text-[white]" : "hover:text-[#FFF200]"} `}>Home</a></li>
+                        <li><a href="/" className={` ${isScrolled ? "hover:text-[white]" : "hover:text-[#FFF200]"} `}>Home</a></li>
                         <li><a href="#about" className={` ${isScrolled ? "hover:text-[white]" : "hover:text-[#FFF200]"} `}>About </a></li>
                         <li><a href="#Products" className={` ${isScrolled ? "hover:text-[white]" : "hover:text-[#FFF200]"} `}>Products</a></li>
-                        <li><a href="#servies" className={` ${isScrolled ? "hover:text-[white]" : "hover:text-[#FFF200]"} `}>Dealership</a></li>
+                        <li><a href="#Dealership" className={` ${isScrolled ? "hover:text-[white]" : "hover:text-[#FFF200]"} `}>Dealership</a></li>
                         <li><a href="#contact" className={` ${isScrolled ? "hover:text-[white]" : "hover:text-[#FFF200]"} `}>Contacts</a></li>
                     </ul>
                 </div>
@@ -48,10 +48,10 @@ const Navbar = () => {
                     >
                         <div className="flex flex-col gap-8 py-12 relative">
                             <ul className="flex flex-col text- gap-4 pl-2 py-4">
-                            <li><a href="/home" className= "181818] hover:text-white">Home</a></li>
+                            <li><a href="/" className= "181818] hover:text-white">Home</a></li>
                             <li><a href="#about" className= "text-[#181818] hover:text-white">About </a></li>
                             <li><a href="#Products" className= "text-[#181818] hover:text-white">Products</a></li>
-                            <li><a href="#servies" className= "text-[#181818] hover:text-white">Dealership</a></li>
+                            <li><a href="Dealership" className= "text-[#181818] hover:text-white">Dealership</a></li>
                             <li><a href="#contact" className= "text-[#181818] hover:text-white">Contacts</a></li>
                             </ul>
                             <div className="flex flex-col border-2 mx-3 border-black rounded-xl bg-[rgba(32,32,31,0.58)] p-8">

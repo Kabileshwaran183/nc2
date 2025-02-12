@@ -47,7 +47,7 @@ const Dealership = () => {
   ]
   return (
     <section>
-      <div className="top-container-1 ">
+      <div className="top-container-1 " id='Dealership'>
         <div className="container ">
               <h2 className='title-text'>Dealership</h2>
           <div className='exp-div-card text-black'>
@@ -93,7 +93,7 @@ const Dealership = () => {
       {
         lang.map((lang,i)=>(
           <SwiperSlide key={i}>
-        <div className="h-80 max-md:h-44 w-90 flex justify-center "> 
+        <div className="h-80 max-md:h-44 w-90 flex justify-center " > 
           <div className={`exp-card ${active === i && 'exp-card-active transition-all duration-300 group transform hover:-translate-y-2 '} shadow-2xl`}>
             <div className=' mx-auto min-w-[2rem] min-h-[10rem] max-md:min-h-[3rem] rounded-md grid place-items-center'>
             <img className='max-md:w-16' src={lang.logo} alt="#logo" />
