@@ -54,22 +54,7 @@ const Navbar = () => {
                             <li><a href="#Dealership" onClick={() => setShowMenu(!showMenu)} className= "text-gray-800 hover:text-white our-font">Dealership</a></li>
                             <li><a href="#contact" onClick={() => setShowMenu(!showMenu)} className= "text-gray-800 hover:text-white our-font">Contacts</a></li>
                             </ul>
-                            <div className="flex flex-col border-2 mx-3 border-black rounded-xl bg-[rgba(32,32,31,0.58)] p-8">
-                                <h2 className="text-base uppercase font-titleFont mb-4 text-white">
-                                    Find us on
-                                </h2>
-                                <div className="flex gap-4 text-white">
-                                    <span className="bannerIcon">
-                                        <a href="https://wa.me/91+9842611032?text=hello I need buliding products and cement !" target="_blank"><BsWhatsapp /></a>
-                                    </span>
-                                    <span className="bannerIcon">
-                                        <CgWebsite />
-                                    </span>
-                                    <span className="bannerIcon text-lg">
-                                        <CiInstagram  />
-                                    </span>
-                                </div>
-                            </div>
+                            
                             <span
                                 onClick={() => setShowMenu(!showMenu)}
                                 className="
