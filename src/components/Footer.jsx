@@ -28,7 +28,7 @@ const Footer = () => {
 
                     <div className="flex gap-5 justify-between items-start pb-1 px-20  ">
                              <a 
-                                className="text-white hover:text-yellow-500 transform hover:scale-150 
+                                className="text-white hover:text-yellow-500 transform hover:scale-150
                             transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/6385217117?text=hello how can help you" target="_blank">
                                 <FaWhatsapp />
                             </a>
