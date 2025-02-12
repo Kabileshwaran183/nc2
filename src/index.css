@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -21,6 +22,9 @@
 
 .txt-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.our-font{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .foot-cont {
