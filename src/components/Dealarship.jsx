@@ -49,7 +49,7 @@ const Dealership = () => {
     <section>
       <div className="top-container-1 ">
         <div className="container ">
-              <h2 className=' text-center mb-10 title-text'>Dealership</h2>
+              <h2 className='title-text'>Dealership</h2>
           <div className='exp-div-card text-black'>
       <div className="min-w-4">
         <Swiper
