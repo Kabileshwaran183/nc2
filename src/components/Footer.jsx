@@ -20,37 +20,37 @@ const Footer = () => {
                 <div className="grid lg:grid-cols-4 gap-20 md:grid-cols-4 grid-cols-2 px-1 md:px-4 lg:px-24 mb-4 ">
                     <div className="flex flex-col ">
                         <h2 className="text-lg text-white">Abouts us</h2>
-                       <li className="foot-cont">home</li>
-                        <li className="foot-cont">abouts</li>
-                        <li className="foot-cont">products</li>
-                        <li className="foot-cont">Dealership</li>
+                       <a  className="foot-cont">home</a>
+                        <a className="foot-cont">abouts</a>
+                        <a className="foot-cont">products</a>
+                        <a className="foot-cont">Dealership</a>
                     </div>
 
 
 
-                    <div>
+                    <div className="flex flex-col">
                         <h2 className="text-lg text-white">
                             PhoneNumber
                         </h2>
-                       <a href='tel:+91 9842611032' className="foot-cont"> 9842611032 </a>
+                       <a href='tel:+91 9842611032' className="foot-cont"> 9842611032</a>
                       <a href='tel:+91 8667408717' className="foot-cont">8667408717</a>
                        <a href='tel:+91 9629789197' className="foot-cont"> 9629789197</a>
-                        <a href='tel:+91 9788766490' className="foot-cont"> 9788766490 </a>
+                        <a href='tel:+91 9788766490' className="foot-cont"> 9788766490</a>
                     </div>
-                    <div className="mb-4 md:mb-0">
+                    <div className="mb-4 md:mb-0 flex flex-col">
                       <h2 className="text-lg text-white">
                             contact
                         </h2>
-                        <li className="foot-cont ">Karaikudinatarajan@gmail.com</li>
+                        <a className="foot-cont  ">Karaikudinatarajan@gmail.com</a>
                         <p className="foot-cont">Phone: +1 113-456-7890 </p>
                         <p className="foot-cont">karaikudi </p>
                        
                     </div>
-                                        <div>
+                    <div className="flex flex-col">
                         <h2 className="text-lg text-white">
                             Landline
                         </h2>
-                        <a href="tel:04565-401379" className="foot-cont">04565-401379 </a>
+                        <a href="tel:04565-401379" className="foot-cont">04565-401379,</a>
                         <a href="tel:04565-232145" className="foot-cont">04565-232145 </a>
                         
                     </div>
