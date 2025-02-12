@@ -7,6 +7,7 @@ import Footer from "./components/Footer"
 import { Services } from "./components/Services"
 import Hero from "./components/Hero"
 import Dealership from "./components/Dealarship"
+import Awards from "./components/Awards"
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Dealership/>
           
           <Contact phone={JsonData.phone} />
+          <Awards/>
           <Footer/>
     </div>
     

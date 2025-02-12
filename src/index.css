@@ -59,3 +59,11 @@ html {
 .exp-card-active {
     @apply h-80 duration-700 delay-100 bg-slate-50
 }
+
+/*Awards*/
+
+.proj-div {
+    @apply px-6 pb-6 rounded-lg hover:shadow-lg transform transition-transform duration-500 hover:scale-110 cursor-pointer
+}
+
+
