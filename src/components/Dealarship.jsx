@@ -46,12 +46,12 @@ const Dealership = () => {
 
   ]
   return (
-     <section>
-       <div className="top-container-1 ">
+    <section>
+      <div className="top-container-1 ">
         <div className="container ">
-              <h2 className='text-4xl font-bold text-center mb-10 txt-shadow text-gray-800 hover:text-[#FFF200]'>Dealership</h2>
+              <h2 className=' text-center mb-10 title-text'>Dealership</h2>
           <div className='exp-div-card text-black'>
-      <div className="min-w-10 ">
+      <div className="min-w-4">
         <Swiper
       
       freeMode={true}
@@ -76,8 +76,8 @@ const Dealership = () => {
           spaceBetween:40,
         },
          768:{
-           spaceBetween:20,
-           slidesPerView:1,
+           spaceBetween:10,
+           slidesPerView:3,
         },
          1024:{
          spaceBetween:40,
@@ -93,17 +93,17 @@ const Dealership = () => {
       {
         lang.map((lang,i)=>(
           <SwiperSlide key={i}>
-        <div className="h-80 w-90 flex "> 
+        <div className="h-80 max-md:h-44 w-90 flex justify-center "> 
           <div className={`exp-card ${active === i && 'exp-card-active transition-all duration-300 group transform hover:-translate-y-2 '} shadow-2xl`}>
-            <div className=' max-w-[10rem] mx-auto min-w-[10rem] min-h-[10rem] rounded-md grid place-items-center'>
-            <img src={lang.logo} alt="#logo" />
+            <div className=' mx-auto min-w-[2rem] min-h-[10rem] max-md:min-h-[3rem] rounded-md grid place-items-center'>
+            <img className='max-md:w-16' src={lang.logo} alt="#logo" />
               
             </div>
           
-            <h3 className="text-2xl lg:text-lg font-bold text-gray-800 lg:mb-1 mb-6 group-hover:text-[#FFF200]">
+            <h3 className=" text-sm md:text-xl font-bold text-gray-800 lg:mb-1 group-hover:text-[#FFF200]">
                       {lang.Name}
                     </h3>
-                    <p className="text-gray-600 text-sm ">{lang.para}</p>
+                    <p className="text-gray-600 max-md:text-sm ">{lang.para}</p>
   
           </div>
         </div>

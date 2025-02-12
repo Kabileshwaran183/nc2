@@ -7,7 +7,7 @@ const Contact = ({ phone }) => {
     <div className=' mt-16 px-4 md:px-16 lg:px-24 mb-20 max-md:mt-8 max-md:text-base ' id='contact'>
 
       <div className=' flex flex-col mx-auto  md:px-12 lg:px-24 xl:px-24 bg-gray-50   text-black   ' id='contact'>
-        <h2 className='Title-div  hover:text-[#FFF200] txt-shadow '>contact me</h2>
+        <h2 className='title-text'>contact me</h2>
         <div className=' flex flex-col md:flex-row items-center md:space-x-12 w-full '>
           <div className=' w-full grid grid-cols-2 gap-4 md:grid-cols-3 '>
             {phone
