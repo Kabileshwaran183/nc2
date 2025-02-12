@@ -11,7 +11,7 @@ const Hero = () => {
                             UltraTech Building <br /><span className="text-[#FFF200]"> Solutions...</span>
                         </h1>
                         <p className="mt-5 px-8 xl:text-lg md:text-base text-xs text-slate-300">
-                            14 PARUPPOORANI SOUTH, V.O.C ROAD,SRI MUTHUMARIAMMAN KOVIL STREET,KARAIKUD
+                            14 PARUPPOORANI SOUTH, V.O.C ROAD,SRI MUTHUMARIAMMAN KOVIL STREET,KARAIKUDI
                         </p>
                         <button
                             className="button-all text-gray-700 mt-5 mb-5  xl:text-xl md:text-base text-xs"

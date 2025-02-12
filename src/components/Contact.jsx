@@ -24,8 +24,8 @@ const Contact = ({ phone }) => {
         </div>
           <div className="mb-6 mt-4 text-sm md:text-lg lg md:px-12 lg:px-24">
             <FaEnvelope className='inline-block  text-[#FFF200] mr-2  '></FaEnvelope>
-            <a href="mailto:karaikudinatarajan@gmail" className=' group-hover:border-b-2 group-hover:border-[#EFB036]'>
-              karaikudinatarajan@gmail
+            <a href="mailto:karaikudinatarajan@gmail.com" className=' group-hover:border-b-2 group-hover:border-[#EFB036]'>
+              karaikudinatarajan@gmail.com
             </a>
           </div>
        <div className='mb-12 text-sm md:text-lg md:px-12 lg:px-24 '>
