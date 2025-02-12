@@ -13,9 +13,9 @@ const Contact = ({ phone }) => {
           <div className=' w-full grid grid-cols-2 gap-4 md:grid-cols-3 '>
             {phone
             ? phone.map((d) => (
-              <div className=' text-center group mb-4 text-sm md:text-lg font-semibold '>
+              <div className=' text-center group mb-4 text-sm md:text-lg  '>
             <FaPhoneVolume className='  inline-block text-[#FFF200] group-hover:scale-110 duration-300 delay-100 group-hover:text-xl mr-2'/>
-            <span><a href={`tel:${d.ph1}`} className=' group-hover:text-xl group-hover:scale-110 duration-300 delay-100 font-mono '>{d.ph}</a></span>
+            <span><a href={`tel:${d.ph1}`} className=' group-hover:text-xl group-hover:scale-110 duration-300 delay-100 font-mono font-semibold '>{d.ph}</a></span>
           </div>
             ))
           : "Loading..."}
