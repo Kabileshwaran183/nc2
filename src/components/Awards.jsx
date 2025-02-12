@@ -85,7 +85,7 @@ const Projectslide = () => {
        
       <div className="mt-16 px-0 md:px-16 lg:px-24 mb-20 max-md:mt-8 max-md:text-base " id='Project'>
         <div className="mx-auto px-8 md:px-16 lg:px-24 ">
-            <h3 className='Title-div  hover:text-[#EFB036]'>Projects</h3>
+            <h3 className='Title-div  txt-shadow hover:text-[#FFF200] '>awards and achievements</h3>
 
             
               <Slider {...settings}>
@@ -93,7 +93,7 @@ const Projectslide = () => {
                     <div key={Exp.img} className='proj-div hover:-translate-y-2 ' >
                         <img src={Exp.img} className='max-h-60 w-full md:max-h-80 rounded-lg ' alt="" />
                         <div className="absolute left-6 right-6 bottom-6 top-0 bg-[#030508cf] duration-500 px-5 opacity-0 hover:opacity-100 hover:scale-91 rounded flex flex-col justify-center items-center   ">
-                          <h1 className='text-sm md:text-sm lg:text-sm xl:text-2xl text-center md:mt-2 font-bold text-[#EFB036]'>{Exp.title}</h1>
+                          <h1 className='text-sm md:text-sm lg:text-sm xl:text-2xl text-center md:mt-2 font-bold text-[#FFF200]'>{Exp.title}</h1>
                              <p className='mt-5 mb-5 text-sm text-white'>{Exp.description}</p>
                              <a href="#" className=' bg-[#FFEA00] text-sm font-bold md:inline transform transition-transform duration-300 hover:scale-110 text-white px-2 md:px-4 rounded-full'>Readmore</a>
                              
