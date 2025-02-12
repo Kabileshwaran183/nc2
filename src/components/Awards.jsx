@@ -66,7 +66,7 @@ function SamplePrevArrow(props) {
 
 const Projectslide = () => {
     var settings = {
-    dots:true,
+    dots:false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,

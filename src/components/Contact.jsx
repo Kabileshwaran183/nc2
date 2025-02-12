@@ -1,6 +1,6 @@
 import React from 'react'
 import { BiPhoneCall, BiPhoneIncoming } from 'react-icons/bi'
-import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkedAlt, FaPhoenixFramework, FaPhone, FaPhoneAlt, FaPhoneSlash, FaPhoneSquare, FaPhoneVolume } from 'react-icons/fa'
 
 const Contact = ({ phone }) => {
 
@@ -13,24 +13,24 @@ const Contact = ({ phone }) => {
           <div className=' w-full grid grid-cols-2 gap-4 md:grid-cols-3 '>
             {phone
             ? phone.map((d) => (
-              <div className=' text-center group mb-4'>
-            <BiPhoneCall className=' text-2xl inline-block text-[#FFF200] group-hover:scale-110 duration-300 delay-100 group-hover:text-3xl mr-2'/>
-            <span><a href={`tel:${d.ph1}`} className='text-2xl group-hover:text-3xl group-hover:scale-110 duration-300 delay-100 '>{d.ph}</a></span>
+              <div className=' text-center group mb-4 text-sm md:text-lg font-semibold '>
+            <FaPhoneVolume className='  inline-block text-[#FFF200] group-hover:scale-110 duration-300 delay-100 group-hover:text-xl mr-2'/>
+            <span><a href={`tel:${d.ph1}`} className=' group-hover:text-xl group-hover:scale-110 duration-300 delay-100 font-mono '>{d.ph}</a></span>
           </div>
             ))
           : "Loading..."}
 </div>
     
         </div>
-          <div className="mb-6 mt-4 pl-16 group">
-            <FaEnvelope className='inline-block text-2xl text-[#FFF200] mr-2  '></FaEnvelope>
-            <a href="mailto:karaikudinatarajan@gmail" className='text-2xl group-hover:border-b-2 group-hover:border-[#EFB036]'>
+          <div className="mb-6 mt-4 text-sm md:text-lg lg md:px-12 lg:px-24">
+            <FaEnvelope className='inline-block  text-[#FFF200] mr-2  '></FaEnvelope>
+            <a href="mailto:karaikudinatarajan@gmail" className=' group-hover:border-b-2 group-hover:border-[#EFB036]'>
               karaikudinatarajan@gmail
             </a>
           </div>
-       <div className='mb-12 pl-16'>
-            <FaMapMarkedAlt className='inline-block text-2xl  text-[#FFF200] mr-2'></FaMapMarkedAlt>
-            <span className='text-xl'>14 PARUPPOORANI SOUTH, V.O.C ROAD,SRI MUTHU MARIAMMAN KOVIL STREET,KARAIKUDI,TAMILNADU-630001 </span>
+       <div className='mb-12 text-sm md:text-lg md:px-12 lg:px-24 '>
+            <FaMapMarkedAlt className='inline-block   text-[#FFF200] mr-2'></FaMapMarkedAlt>
+            <span className=''>14 PARUPPOORANI SOUTH, V.O.C ROAD,SRI MUTHU MARIAMMAN KOVIL STREET,KARAIKUDI,TAMILNADU-630001 </span>
              
            </div>
            <div className='h-0 overflow-hidden relative pb-[40%]'>
