@@ -9,7 +9,7 @@ const Footer = () => {
             <div className=" top-0 left-0 w-[100%] overflow-hidden ">
                 <svg data-name="Layer 1"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0.5 12 1200 18 "
+                    viewBox="0.5 12 1200  "
                     preserveAspectRatio="none">
                     <path
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,
