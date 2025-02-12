@@ -26,7 +26,7 @@ function App() {
           <Product data={JsonData.Products}/>
           <Dealership/>
           
-          <Contact />
+          <Contact phone={JsonData.phone} />
           <Footer/>
     </div>
     

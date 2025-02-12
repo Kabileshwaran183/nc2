@@ -75,5 +75,30 @@
     "Header": {
         "title": "We are a Landing Page",
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
-    }
+    },
+
+    "phone":[
+        {
+            "landline": "04565-401379"
+        },
+        {
+            "landline": "04565-232145"
+        },
+
+        {
+            "ph": "98426 11032"
+        },
+        {
+            "ph": "86674 08717"
+        },
+        {
+             "ph": "96297 89197"
+        },
+        {
+             "ph": "97887 66490"
+        }
+           
+           
+        
+    ]
 }

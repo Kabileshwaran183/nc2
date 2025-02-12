@@ -1,45 +1,30 @@
 import React from 'react'
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from 'react-icons/fa'
 
-const Contact = () => {
+const Contact = ({ phone }) => {
 
   return (
-    <div className=' mt-16 px-6 md:px-16 lg:px-24 mb-20 max-md:mt-8 max-md:text-base ' id='contact'>
+    <div className=' mt-16 px-4 md:px-16 lg:px-24 mb-20 max-md:mt-8 max-md:text-base ' id='contact'>
 
-      <div className='flex flex-col mx-auto  md:px-12 lg:px-24 xl:px-24 bg-gray-50   text-black   ' id='contact'>
+      <div className=' flex flex-col mx-auto  md:px-12 lg:px-24 xl:px-24 bg-gray-50   text-black   ' id='contact'>
         <h2 className='Title-div  hover:text-[#FFF200] txt-shadow '>contact me</h2>
-        <div className=' flex flex-col md:flex-row items-center md:space-x-12 w-full'>
-          <div className=' w-full grid grid-cols-2 gap-4 md:grid-cols-3'>
+        <div className=' flex flex-col md:flex-row items-center md:space-x-12 w-full '>
+          <div className=' w-full grid grid-cols-2 gap-4 md:grid-cols-3 '>
+            {phone
+            ? phone.map((d) => (
+              <div className=' text-center '>
+            <FaPhone className='inline-block  text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2 '></FaPhone>
+            <span><a href={`tel:${d.ph,d.landline}`} className=''>{d.ph} {d.landline}</a></span> 
+          </div>
+            ))
+          : "Loading..."}
+          
            
-          <div className=''>
-            <FaPhone className='inline-block  text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href="tel:04565-232145">04565-232145 </a></span> 
-          </div>
-           <div className=''>
-            <FaPhone className='inline-block  text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href="tel: 04565-401379">04565-401379 </a></span> 
-          </div>
-            <div className=' '>
-            <FaPhone className='inline-block text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href='tel:+91 9842611032'> 9842611032 </a></span>
-            </div>
-            <div className=''>
-            <FaPhone className='inline-block text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href='tel:+91 8667408717'>8667408717</a></span>
-            </div>
-            <div className=''>
-            <FaPhone className='inline-block  text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href='tel:+91 9629789197'> 9629789197</a></span>
-            </div>
-            <div className='mb-4'>
-            <FaPhone className='inline-block text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaPhone>
-            <span><a href='tel:+91 9788766490'> 9788766490 </a></span>
-            </div>
-          </div>
+</div>
     
-        </div>
-           <div className="mb-4 ">
-            <FaEnvelope className='inline-block  text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2'></FaEnvelope>
+        </div> 
+           <div className="mb-4 mt-4   ">
+            <FaEnvelope className='inline-block  text-[#FFF200] hover:scale-110 duration-300 delay-100 hover:text-2xl mr-2  '></FaEnvelope>
             <a href="mailto:karaikudinatarajan@gmail" className='hover:border-b-2 hover:border-[#EFB036]'>
               karaikudinatarajan@gmail
             </a>
