@@ -9,7 +9,7 @@ const Footer = () => {
             <div className=" top-0 left-0 w-[100%] overflow-hidden ">
                 <svg data-name="Layer 1"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0.5 12 1200 18 "
+                    viewBox="0.5 12 1200  "
                     preserveAspectRatio="none">
                     <path
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,
@@ -26,7 +26,7 @@ const Footer = () => {
                  <div className="">
                    
 
-                    <div className="flex gap-5 justify-between items-start pb-1 px-20  ">
+                    <div className="flex gap-5 justify-between items-start pb-1 md:px-[40%] px-[20%] ">
                              <a 
                                 className="text-white hover:text-yellow-500 transform hover:scale-150
                             transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/6385217117?text=hello how can help you" target="_blank">
