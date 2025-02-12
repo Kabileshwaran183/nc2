@@ -60,7 +60,7 @@ const Navbar = () => {
                                 </h2>
                                 <div className="flex gap-4 text-white">
                                     <span className="bannerIcon">
-                                        <a href="https://wa.me/91+9842611032?text=hello how can help you" target="_blank"><BsWhatsapp /></a>
+                                        <a href="https://wa.me/91+9842611032?text=hello I need buliding products and cement !" target="_blank"><BsWhatsapp /></a>
                                     </span>
                                     <span className="bannerIcon">
                                         <CgWebsite />
