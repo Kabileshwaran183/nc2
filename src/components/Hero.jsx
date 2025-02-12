@@ -1,4 +1,5 @@
 import React from "react";
+import { BsWhatsapp } from "react-icons/bs";
 
 const Hero = () => {
     return (
@@ -15,7 +16,8 @@ const Hero = () => {
                         <button
                             className="button-all text-gray-700 mt-5 mb-5  xl:text-xl md:text-base text-xs"
                         >
-                            Reach us
+
+                            <BsWhatsapp className="inline-block max-md:text-base mr-1 mt-[-2px] "/> Reach us
                         </button>
                     </div>
                     <div></div>
