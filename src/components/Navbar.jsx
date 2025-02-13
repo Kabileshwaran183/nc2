@@ -49,10 +49,10 @@ const Navbar = () => {
                     className="
                     z-50 w-[60%] md:w-[45%] md:hidden h-screen overflow-scroll absolute top-0 left-0 p-4 right-0 bottom-0 scrollbar-hide bg-[#FFF200]"
                     >
-                        <div className="flex flex-col gap-8 py-12 relative">
+                        <div className="flex flex-col gap-8 py-4 relative">
                             <div className="">
                             <img className="w-28 h-30 absolute -top-9 left-[-20px] " src="/assets/7.png " alt="Logo" /></div>
-                            <ul className="flex flex-col text- gap-4 pl-2 py-10">
+                            <ul className="flex flex-col text-lg max-sm:text-base gap-4 pl-2 py-10">
                             <li><a href="/" onClick={() => setShowMenu(!showMenu)} className= "text-gray-800 hover:text-white our-font">Home</a></li>
                             <li><a href="#about" onClick={() => setShowMenu(!showMenu)} className= "text-gray-800 hover:text-white our-font">About </a></li>
                             <li><a href="#Products" onClick={() => setShowMenu(!showMenu)} className= "text-gray-800 hover:text-white our-font">Products</a></li>
