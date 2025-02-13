@@ -17,7 +17,7 @@ const Hero = () => {
                             className="button-all text-gray-700 mt-5 mb-5  xl:text-xl md:text-base text-xs"
                         >
 
-                            <a href="https://wa.me/91+9842611032?text=hello I need buliding products and cement !" target="_blank"><BsWhatsapp className="inline-block max-md:text-base mr-1 mt-[-2px] "/></a> Reach us
+                            <a href="https://wa.me/91+8667408717?text=hello I need buliding products and cement !" target="_blank"><BsWhatsapp className="inline-block max-md:text-base mr-1 mt-[-2px] "/></a> Reach us
                         </button>
                     </div>
                     <div></div>
