@@ -1,9 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 export const About = () => {
     return (
+         
+
+
         <section className="top-container-1">
+                   <Helmet>
+                        <meta charset="UTF-8" />
+                          <link rel="icon" href="/assets/natarajan and co mrng.jpg" />
+                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                         <meta http-equiv="X-UA-Compatible" content="IE=7"></meta>
+                         <title>Natarajan and co karaikudi</title>
+                        <meta name="description"
+                                 content="Natarajan and co With 21 years of expertise as a Proud UltraTech partner, we specialize in providing high-quality construction products. " />
+   
+                         <meta name="keywords" content="natarajanandco,natarajan,natarajanand,natarajanco,natarajan and co,natarajan and co karaikudi,karaikudi natarajan and co,karaikudinatarajanandco, karaikudicementshop,karaikudibulidingshop,
+                          ultratech buliding solution karaikudi,utech natarajan and co ultratechbulidingsolutionkaraikudi,ultratechkaraikudi, ultratech karaikudi,ultratech cement karaikudi,ultratechcementkaraikudi"/>
+                        <meta name='url' content='https://natarajanandco.com/'></meta>
+                        <meta name='robots' content='index,follow'></meta>
+                   </Helmet>
+
+
             <div id="about" className="py-2 bg-gray-50">
                 <div className=" Title-div ">
                     <h2 className="title-text">About us</h2>
