@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <section className="">
             <nav
-                data-aos="fade-down"
+                
                 className={`${isScrolled ? "md:bg-[rgb(255,242,0)]" : "bg-[rgba(255,242,0,0.0)]"
                     } p-2 fixed w-full z-50 transition-all duration-300`}
             >
@@ -27,7 +27,7 @@ const Navbar = () => {
             <div className={`h-16 xl:h-20 px-4 ${isScrolled ? "text-[#1f1d1dec]" : "text-white"} flex items-center justify-between md:justify-between `}>
                 <div className="md:block hidden">
     <img className="lg:w-40 w-32 h-30 object-cover" src={`${isScrolled ? "/assets/7.png":"/assets/logomain.png"}`} alt="Logo" /></div>
-    <div className="lg:mr-25 xl:mr-96">
+    <div className="xl:mr-96 lg:mr-44 mr-20">
     <ul className="hidden md:flex gap-10  items-center font-bold text-lg xl:text-2xl">
         <li><a href="/" className={` ${isScrolled ? "hover:text-[#f5f7f6]" : "hover:text-[#FFF200]"} our-font `}>Home</a></li>
         <li><a href="#about" className={` ${isScrolled ? "hover:text-[#f5f7f6]" : "hover:text-[#FFF200]"} our-font `}>About</a></li>
@@ -38,7 +38,7 @@ const Navbar = () => {
 </div>
 
                 <span
-                    className="text-xl md:hidden bg-[#00000048] w-10 h-10 inline-flex items-center justify-center text-white rounded-xl cursor-pointer "
+                    className="text-xl md:hidden absolute -bottom-[-15px] bg-[#00000048] w-10 h-10 inline-flex items-center justify-center text-white rounded-xl cursor-pointer "
                     onClick={() => setShowMenu(!showMenu)}
                 >
                     <FiMenu />
