@@ -1,4 +1,5 @@
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaMailBulk, FaPhone, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { BiPhoneCall } from "react-icons/bi";
+import {  FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 
 const Footer = () => {
@@ -27,7 +28,7 @@ const Footer = () => {
                  <div className="">
                    
 
-                    <div className="flex gap-5 justify-between items-start pb-1 md:px-[40%] px-[20%] ">
+                    <div className="flex gap-5 justify-between items-start pb-4 md:px-[40%] px-[20%] ">
                              <a 
                                 className="text-white hover:text-yellow-500 transform hover:scale-150
                             transition-all duration-150 ease-in-out text-2xl" href="https://wa.me/8667408717?text=hello i need for cement and buliding material ?" target="_blank">
@@ -41,7 +42,7 @@ const Footer = () => {
                             <a
                                 className="text-white hover:text-yellow-500 transform hover:scale-150
                             transition-all duration-150 ease-in-out text-2xl" href="tel:91+ 9842611032" target="_blank">
-                                <FaPhone />
+                                <BiPhoneCall />
                             </a>
                             <a
                                 className="text-white hover:text-yellow-500 transform hover:scale-150

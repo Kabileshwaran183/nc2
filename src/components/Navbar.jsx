@@ -26,7 +26,7 @@ const Navbar = () => {
             
             <div className={`h-16 xl:h-20 px-4 ${isScrolled ? "text-[#1f1d1dec]" : "text-white"} flex items-center justify-between md:justify-between `}>
                 <div className="md:block hidden">
-    <img className="lg:w-40 w-32 h-30 object-cover" src={`${isScrolled ? "/assets/7.png":"/assets/logomain.png"}`} alt="Logo" /></div>
+    <img className="xl:w-32 lg:w-24 w-20 h-30 " src={`${isScrolled ? "/assets/7.png":"/assets/logomain.png"}`} alt="Logo" /></div>
     <div className="xl:mr-96 lg:mr-36 mr-16">
     <ul className="hidden md:flex gap-10  items-center font-bold text-lg lg:text-xl xl:text-2xl">
         <li><a href="/" className={` ${isScrolled ? "hover:text-[#f5f7f6]" : "hover:text-[#FFF200]"} our-font `}>Home</a></li>
