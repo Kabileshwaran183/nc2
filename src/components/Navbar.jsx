@@ -24,8 +24,11 @@ const Navbar = () => {
                 data-aos="fade-down"
                 className={`${isScrolled ? "md:bg-[rgb(255,242,0)]" : "bg-[rgba(255,242,0,0.0)]"
                     } p-2 fixed w-full z-50 transition-all duration-300`}
-            >
-                <div className={` h-10 xl:h-12  px ${isScrolled ? "text-[#1f1d1dec]" : "text-white"}  hidden  md:block`}>
+            >   
+            
+                <div className={` h-10 xl:h-12  px ${isScrolled ? "text-[#1f1d1dec]" : "text-white"} flex flex-row  md:block`}>
+                <img className="w-36 inline-block " src="assets/logomain.png">
+                </img>
                     <ul className=" flex gap-10 justify-center py-2 font-bold text-lg xl:text-2xl  ">
                         <li><a href="/" className={` ${isScrolled ? "hover:text-[#f5f7f6]" : "hover:text-[#FFF200]"} our-font `}>Home</a></li>
                         <li><a href="#about" className={` ${isScrolled ? "hover:text-[#f5f7f6]" : "hover:text-[#FFF200]"} our-font `}>About </a></li>
