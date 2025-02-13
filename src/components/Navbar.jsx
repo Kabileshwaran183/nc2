@@ -26,7 +26,7 @@ const Navbar = () => {
             
             <div className={`h-16 xl:h-20 px-4 ${isScrolled ? "text-[#1f1d1dec]" : "text-white"} flex items-center justify-between md:justify-between `}>
                 <div className="md:block hidden">
-    <img className="w-20  h-30 object-cover" src="/assets/7.png " alt="Logo" /></div>
+    <img className="lg:w-40 w-32 h-30 object-cover" src={`${isScrolled ? "/assets/7.png":"/assets/logomain.png"}`} alt="Logo" /></div>
     <div className="lg:mr-25 xl:mr-96">
     <ul className="hidden md:flex gap-10  items-center font-bold text-lg xl:text-2xl">
         <li><a href="/" className={` ${isScrolled ? "hover:text-[#f5f7f6]" : "hover:text-[#FFF200]"} our-font `}>Home</a></li>
@@ -51,7 +51,7 @@ const Navbar = () => {
                     >
                         <div className="flex flex-col gap-8 py-12 relative">
                             <div className="">
-                               <img className="w-30  h-30 absolute -top-10 left-0 right-0 " src="/assets/7.png " alt="Logo" /></div>
+                            <img className="w-28 h-30 absolute -top-9 left-[-20px] " src="/assets/7.png " alt="Logo" /></div>
                             <ul className="flex flex-col text- gap-4 pl-2 py-10">
                             <li><a href="/" onClick={() => setShowMenu(!showMenu)} className= "text-gray-800 hover:text-white our-font">Home</a></li>
                             <li><a href="#about" onClick={() => setShowMenu(!showMenu)} className= "text-gray-800 hover:text-white our-font">About </a></li>
