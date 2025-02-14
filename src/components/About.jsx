@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 export const About = () => {
     return (
@@ -8,9 +8,9 @@ export const About = () => {
 
 
         <section className="top-container-1">
-                   <Helmet>
+                   {/* <Helmet>
                         <meta charset="UTF-8" />
-                          <link rel="icon" href="/assets/natarajan and co mrng.jpg" />
+                        <link rel="icon" href="/assets/natarajan and co mrng.jpg" />
                          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                          <meta http-equiv="X-UA-Compatible" content="IE=7"></meta>
                          <title>Natarajan and co karaikudi</title>
@@ -21,7 +21,8 @@ export const About = () => {
                           ultratech buliding solution karaikudi,utech natarajan and co ultratechbulidingsolutionkaraikudi,ultratechkaraikudi, ultratech karaikudi,ultratech cement karaikudi,ultratechcementkaraikudi"/>
                         <meta name='url' content='https://natarajanandco.com/'></meta>
                         <meta name='robots' content='index,follow'></meta>
-                   </Helmet>
+                        <img src="/assets/natarajan.webp" alt="Natarajan and co " title="natarajanandco ultratech buliding solution "/>
+                   </Helmet> */}
 
 
             <div id="about" className="py-2 bg-gray-50">
@@ -41,9 +42,10 @@ export const About = () => {
                                 viewport={{ once: false, amount: 0.3 }}
                             >
                                 <img
-                                    src="assets/natarajan.jpg"
-                                    alt="About Us"
+                                    src="/assets/natarajan.webp"
+                                    
                                     className="w-full max-w-md rounded-lg shadow-lg"
+                                    alt="Natarajan and co ultratech buliding solution" title="natarajanandco ultratech buliding solution "
                                 />
                                 </motion.div>
                         </div>
