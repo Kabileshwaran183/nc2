@@ -23,7 +23,7 @@ const Footer = () => {
 
 
                  <div>
-                        <h6 className=" text-gray-400 text-center mb-5 ">&copy; SK {Year}</h6>
+                    <h6 className=" text-gray-400 text-center mb-5 ">SK &copy;  {Year}</h6>
                     </div>
                  <div className="">
                    

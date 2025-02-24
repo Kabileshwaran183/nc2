@@ -13,12 +13,14 @@ const Hero = () => {
                         <p className="mt-5 px-8 xl:text-lg md:text-base text-xs text-slate-300">
                             14 PARUPPOORANI SOUTH, V.O.C ROAD,SRI MUTHUMARIAMMAN KOVIL STREET,KARAIKUDI
                         </p>
-                        <button
-                            className="button-all text-gray-700 mt-5 mb-5  xl:text-xl md:text-base text-xs"
-                        >
+                        <a href="https://wa.me/918667408717?text=hello I need buliding products and cement !" target="_blank">
+                            <button
+                                className=" bg-[#fafa167c] font-bold md:inline transform transition-transform duration-300 hover:scale-110 py-2 px-4 rounded-full text-[#ffffff] mt-5 mb-5  xl:text-xl md:text-base text-xs"
+                            >
 
-                            <a href="https://wa.me/91+8667408717?text=hello I need buliding products and cement !" target="_blank"><BsWhatsapp className="inline-block max-md:text-base mr-1 mt-[-2px] "/></a> Reach us
-                        </button>
+                                <BsWhatsapp className="inline-block max-md:text-base mr-1 mt-[-2px] " /> Reach us
+                            </button>
+                        </a>
                     </div>
                     <div></div>
                 </div>
