@@ -67,7 +67,7 @@ const BrandDetails = () => {
           <ScrollReveal variant="fade-up">
             <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-6">Related Services</h2>
           </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
             {relatedServices.map((s, i) => (
               <ScrollReveal key={s.slug} variant="fade-up" delay={i * 100} className="h-full">
                 <Link
