@@ -1,38 +1,37 @@
-import About from "./components/About"
-import Contact from "./components/Contact"
-import Navbar from "./components/Navbar"
-import Product from "./components/Product"
-import JsonData from "./components/Constants/Product.json"
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import Dealership from "./components/Dealarship"
-import Awards from "./components/Awards"
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import ServiceDetails from "./pages/ServiceDetails";
+import Products from "./pages/Products";
+import ProductDetails from "./pages/ProductDetails";
+import Brands from "./pages/Brands";
+import BrandDetails from "./pages/BrandDetails";
+import Dealership from "./pages/Dealership";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 function App() {
-
   return (
-    <>
-    <div >
-    <div className="h-screen relative">
-      <div className="bg-black">
-        <img src="assets/natarajan and co mrng.jpg" alt="Natarajan and co ultratech buliding solution" title="natarajanandco ultratech buliding solution "
-          className="absolute right-0 top-0 h-screen w-full object-cover opacity-50 z-[-1]"
-        /></div>
-        <Navbar />
-        <Hero />
-      </div>
-          <About />
-          <Product data={JsonData.Products}/>
-          <Dealership/>
-          <Awards/>
-          <Contact phone={JsonData.phone} />
-          
-          <Footer/>
-    </div>
-    
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/:serviceSlug" element={<ServiceDetails />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:productSlug" element={<ProductDetails />} />
+          <Route path="/brands" element={<Brands />} />
+          <Route path="/brands/:brandSlug" element={<BrandDetails />} />
+          <Route path="/dealership" element={<Dealership />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

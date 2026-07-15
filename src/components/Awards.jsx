@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Autoplay } from 'swiper/modules';
+import ScrollReveal from './ScrollReveal';
 
 const Exp = [
   {
@@ -113,7 +113,9 @@ const Projectslide = () => {
 
       <div className="top-container-1 " id='Project'>
         <div className="mx-auto px-8 md:px-16 lg:px-24 ">
-          <h3 className='title-text'>Achievements</h3>
+          <ScrollReveal variant="fade-up">
+            <h3 className='title-text'>Achievements</h3>
+          </ScrollReveal>
 
 
           <Slider {...settings}>
