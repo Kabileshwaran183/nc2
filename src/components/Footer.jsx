@@ -66,7 +66,7 @@ const Footer = () => {
 
             {/* Column 1: Business Info */}
             <ScrollReveal variant="fade-up" className="sm:col-span-2 lg:col-span-1">
-              <img src="/assets/logomain.png" alt="Natarajan and Co logo" className="w-24 mb-4" />
+        
               <h3 className="font-bold text-lg our-font mb-2">Natarajan and Co</h3>
               <p className="text-sm text-gray-400 leading-relaxed mb-5">
                 Authorised UltraTech dealer supplying quality building materials in Karaikudi for over 21 years.
@@ -138,7 +138,7 @@ const Footer = () => {
             </ScrollReveal>
 
             {/* Column 5: Contact Information */}
-            <ScrollReveal variant="fade-up" delay={320} className="sm:col-span-2 lg:col-span-1">
+            <ScrollReveal variant="fade-up" delay={320} className="sm:col-span-2 md:col-span-2 lg:col-span-1">
               <h4 className="font-bold text-sm uppercase tracking-wide text-[#FFF200] mb-4 our-font">Contact Information</h4>
               <ul className="space-y-3 text-sm text-gray-400">
                 <li className="flex items-start gap-2">
@@ -153,7 +153,7 @@ const Footer = () => {
                   <GoMail className="shrink-0 text-[#FFF200]" />
                   <a
                     href="mailto:karaikudinatarajan@gmail.com"
-                    className="hover:text-[#FFF200] transition-colors duration-300 "
+                    className="hover:text-[#FFF200] transition-colors duration-300 break-all "
                   >
                     karaikudinatarajan@gmail.com
                   </a>

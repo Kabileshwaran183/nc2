@@ -53,8 +53,18 @@ const BrandDetails = () => {
         </Link>
 
         <ScrollReveal variant="fade-up">
-          <div className="max-w-3xl mb-16">
-            <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">About {brand.name}</h2>
+
+          <div className=" text-center mb-16">
+            <h2 className="text-xl md:text-2xl font-bold ] mb-4 inline-block
+              rounded-full
+              bg-[#FFF200]/25
+              px-3 py-1.5
+              text-[10px] font-bold
+              uppercase
+              tracking-widest
+              text-[#8a7600]
+              sm:px-4 sm:text-xs
+              md:text-sm">About {brand.name}</h2>
             <p className="text-gray-600 leading-relaxed">{brand.description}</p>
           </div>
         </ScrollReveal>
@@ -67,7 +77,7 @@ const BrandDetails = () => {
           <ScrollReveal variant="fade-up">
             <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-6">Related Services</h2>
           </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 ">
             {relatedServices.map((s, i) => (
               <ScrollReveal key={s.slug} variant="fade-up" delay={i * 100} className="h-full">
                 <Link

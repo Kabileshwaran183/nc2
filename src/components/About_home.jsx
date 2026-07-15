@@ -93,7 +93,7 @@ export const About_home = () => {
           <ScrollReveal variant="right">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Who We Are</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Natarajan and Co has been serving Karaikudi for over 21 years as an authorised
+              Natarajan and Co has been serving Karaikudi for over 23 years as an authorised
               dealer for UltraTech, India's No.1 cement brand. What started as a local
               building-materials shop has grown into a trusted supplier for homeowners,
               contractors, and small businesses across the region.
