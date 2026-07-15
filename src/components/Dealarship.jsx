@@ -16,7 +16,7 @@ const DEALERSHIPS = [
   {
     name: 'Birla',
     logo: '/Bg/WHIRE BG.png',
-    image: '/logo/aditya-birla.png',
+    image: '/logo/aditya-birla-logo.png',
     para: 'Authorised Dealer of Birla White and WallCare Putty.',
     location: 'Karaikudi, Tamil Nadu',
     centerTitle: 'Authorised Birla White Dealer',

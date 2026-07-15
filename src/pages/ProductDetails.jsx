@@ -1,7 +1,11 @@
 import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
-import { FaArrowLeft, FaCheckCircle } from "react-icons/fa";
-import PageHeader from "../components/PageHeader";
+import {
+  FaArrowLeft,
+  FaCheckCircle,
+  FaArrowRight,
+} from "react-icons/fa";
+
 import ScrollReveal from "../components/ScrollReveal";
 import RelatedProducts from "../components/RelatedProducts";
 import ContactCTA from "../components/ContactCTA";
@@ -25,112 +29,520 @@ const FAQ = [
 
 const ProductDetails = () => {
   const { productSlug } = useParams();
-  const product = products.find((p) => p.slug === productSlug);
+
+  const product = products.find(
+    (item) => item.slug === productSlug
+  );
 
   if (!product) {
     return <Navigate to="/products" replace />;
   }
 
-  const related = products
-    .filter((p) => p.slug !== product.slug && p.brandSlug === product.brandSlug)
+  const relatedProducts = products
+    .filter(
+      (item) =>
+        item.slug !== product.slug &&
+        item.brandSlug === product.brandSlug
+    )
     .slice(0, 3);
 
-  const relatedFallback = related.length > 0
-    ? related
-    : products.filter((p) => p.slug !== product.slug).slice(0, 3);
+  const relatedFallback =
+    relatedProducts.length > 0
+      ? relatedProducts
+      : products
+          .filter((item) => item.slug !== product.slug)
+          .slice(0, 3);
+
+  const productSections = [
+    {
+      id: "features",
+      title: "Key Features",
+      items: product.features || [],
+    },
+    {
+      id: "benefits",
+      title: "Main Benefits",
+      items: product.benefits || [],
+    },
+    {
+      id: "applications",
+      title: "Recommended Applications",
+      items: product.applications || [],
+    },
+  ];
 
   return (
     <>
-      <SEO title={product.name} description={product.shortDescription} />
-      <PageHeader eyebrow={product.brand} title={product.name} breadcrumb={product.name} />
+      <SEO
+        title={product.name}
+        description={product.shortDescription}
+      />
 
-      <section className="top-container-1">
-        <Link
-          to="/products"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-[#8a7600] hover:text-gray-800 transition-colors duration-300 mb-8"
+      {/* Product Banner */}
+      <section
+        className="
+          relative
+          h-[240px]
+          overflow-hidden
+          bg-black
+          sm:h-[280px]
+          md:h-[320px]
+          lg:h-[380px]
+        "
+      >
+        <img
+          src={product.image}
+          alt={`${product.name} banner`}
+          className="
+            absolute inset-0
+            h-full w-full
+            object-cover
+            opacity-40
+          "
+        />
+
+        {/* Dark Overlay */}
+        <div
+          className="
+            absolute inset-0
+            bg-gradient-to-b
+            from-black/20
+            via-black/40
+            to-black/80
+          "
+        />
+
+        {/* Banner Content */}
+        <div
+          className="
+            relative z-10
+            flex h-full
+            items-center
+            justify-center
+            px-4
+            text-center
+            sm:px-6
+          "
         >
-          <FaArrowLeft /> Back to Products
-        </Link>
+          <ScrollReveal variant="fade-up" delay={100}>
+            <div className="mx-auto max-w-3xl">
+              <span
+                className="
+                  inline-block
+                  rounded-full
+                  border border-[#FFF200]/40
+                  bg-[#FFF200]/15
+                  px-3 py-1
+                  text-[10px]
+                  font-bold
+                  uppercase
+                  tracking-[0.2em]
+                  text-[#FFF200]
+                  backdrop-blur-sm
+                  sm:px-4
+                  sm:text-xs
+                "
+              >
+                Product Details
+              </span>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
-          <ScrollReveal variant="scale">
-            <div className="bg-[#f5f7fa] rounded-xl p-10 flex items-center justify-center shadow-md border border-gray-100">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="max-h-64 md:max-h-80 object-contain transition-transform duration-500 hover:scale-105"
-              />
+              <h1
+                className="
+                  mt-4
+                  break-words
+                  text-2xl
+                  font-bold
+                  leading-tight
+                  text-white
+                  sm:text-3xl
+                  md:text-4xl
+                  lg:text-5xl
+                "
+              >
+                {product.name}
+              </h1>
+
+              <p
+                className="
+                  mt-2
+                  text-xs
+                  text-slate-300
+                  sm:text-sm
+                  md:text-base
+                "
+              >
+                {product.brand} • {product.category}
+              </p>
             </div>
           </ScrollReveal>
+        </div>
+      </section>
 
-          <ScrollReveal variant="right">
-            <span className="text-xs font-bold uppercase tracking-wide text-[#8a7600]">
-              {product.brand} &middot; {product.category}
-            </span>
-            <h1 className="mt-2 text-2xl md:text-3xl font-bold text-gray-800">{product.name}</h1>
-            <p className="mt-4 text-gray-600 leading-relaxed">{product.description}</p>
+      {/* Main Product Content */}
+      <main
+        className="
+          top-container-1
+          overflow-hidden
+          px-4 py-8
+          sm:px-6 sm:py-10
+          lg:px-8 lg:py-14
+        "
+      >
+        <div className="mx-auto max-w-7xl">
 
+          {/* Back Button */}
+          <ScrollReveal variant="left">
             <Link
-              to={`/brands/${product.brandSlug}`}
-              className="inline-block mt-5 text-sm font-semibold text-[#8a7600] hover:text-gray-800 transition-colors duration-300"
+              to="/products"
+              className="
+                mb-7
+                inline-flex
+                items-center
+                gap-2
+                text-xs
+                font-semibold
+                text-[#8a7600]
+                transition-all
+                duration-300
+                hover:-translate-x-1
+                hover:text-gray-800
+                sm:mb-10
+                sm:text-sm
+              "
             >
-              View all {product.brand} products &rarr;
+              <FaArrowLeft className="text-xs" />
+
+              Back to Products
             </Link>
           </ScrollReveal>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
-          <ScrollReveal variant="fade-up">
-            <h2 className="font-bold text-lg text-gray-800 mb-4">Key Features</h2>
-            <ul className="space-y-3">
-              {product.features.map((f) => (
-                <li key={f} className="flex items-start gap-2 text-sm text-gray-600">
-                  <FaCheckCircle className="text-[#c9a900] mt-0.5 shrink-0" /> {f}
-                </li>
-              ))}
-            </ul>
-          </ScrollReveal>
-          <ScrollReveal variant="fade-up" delay={100}>
-            <h2 className="font-bold text-lg text-gray-800 mb-4">Main Benefits</h2>
-            <ul className="space-y-3">
-              {product.benefits.map((b) => (
-                <li key={b} className="flex items-start gap-2 text-sm text-gray-600">
-                  <FaCheckCircle className="text-[#c9a900] mt-0.5 shrink-0" /> {b}
-                </li>
-              ))}
-            </ul>
-          </ScrollReveal>
-          <ScrollReveal variant="fade-up" delay={200}>
-            <h2 className="font-bold text-lg text-gray-800 mb-4">Recommended Applications</h2>
-            <ul className="space-y-3">
-              {product.applications.map((a) => (
-                <li key={a} className="flex items-start gap-2 text-sm text-gray-600">
-                  <FaCheckCircle className="text-[#c9a900] mt-0.5 shrink-0" /> {a}
-                </li>
-              ))}
-            </ul>
-          </ScrollReveal>
-        </div>
-
-        {/* FAQ */}
-        <ScrollReveal variant="fade-up">
-          <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
-        </ScrollReveal>
-        <div className="space-y-4 mb-4">
-          {FAQ.map((item, i) => (
-            <ScrollReveal key={item.q} variant="fade-up" delay={i * 100}>
-              <div className="bg-gray-50 rounded-xl p-5 border border-gray-100">
-                <h3 className="font-semibold text-gray-800 mb-1">{item.q}</h3>
-                <p className="text-sm text-gray-600">{item.a}</p>
+          {/* Product Overview */}
+          <section
+            className="
+              mb-12
+              grid
+              grid-cols-1
+              items-center
+              gap-8
+              md:grid-cols-2
+              md:gap-10
+              lg:mb-20
+              lg:gap-16
+            "
+          >
+            {/* Product Image */}
+            <ScrollReveal variant="scale">
+              <div
+                className="
+                  group
+                  flex
+                  min-h-[280px]
+                  items-center
+                  justify-center
+                  overflow-hidden
+                  rounded-xl
+                  border
+                  border-gray-100
+                  bg-[#f5f7fa]
+                  p-6
+                  shadow-md
+                  sm:min-h-[350px]
+                  sm:p-8
+                  md:min-h-[420px]
+                  lg:p-12
+                "
+              >
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  loading="lazy"
+                  className="
+                    h-auto
+                    max-h-[230px]
+                    w-full
+                    max-w-[350px]
+                    object-contain
+                    transition-transform
+                    duration-500
+                    group-hover:scale-105
+                    sm:max-h-[290px]
+                    md:max-h-[350px]
+                  "
+                />
               </div>
             </ScrollReveal>
-          ))}
+
+            {/* Product Information */}
+            <ScrollReveal variant="right">
+              <div>
+                <span
+                  className="
+                    inline-block
+                    rounded-full
+                    bg-[#FFF200]/20
+                    px-3 py-1.5
+                    text-[10px]
+                    font-bold
+                    uppercase
+                    tracking-wider
+                    text-[#8a7600]
+                    sm:px-4
+                    sm:text-xs
+                  "
+                >
+                  {product.brand} • {product.category}
+                </span>
+
+                <h2
+                  className="
+                    mt-4
+                    break-words
+                    text-2xl
+                    font-bold
+                    leading-tight
+                    text-gray-800
+                    sm:text-3xl
+                    lg:text-4xl
+                  "
+                >
+                  {product.name}
+                </h2>
+
+                <p
+                  className="
+                    mt-4
+                    text-sm
+                    leading-7
+                    text-gray-600
+                    sm:text-base
+                    sm:leading-8
+                  "
+                >
+                  {product.description}
+                </p>
+
+                <Link
+                  to={`/brands/${product.brandSlug}`}
+                  className="
+                    mt-6
+                    inline-flex
+                    items-center
+                    gap-2
+                    rounded-full
+                    bg-[#FFF200]
+                    px-5 py-3
+                    text-xs
+                    font-bold
+                    text-gray-900
+                    transition-all
+                    duration-300
+                    hover:-translate-y-0.5
+                    hover:shadow-lg
+                    active:scale-95
+                    sm:text-sm
+                  "
+                >
+                  View All {product.brand} Products
+
+                  <FaArrowRight className="text-xs" />
+                </Link>
+              </div>
+            </ScrollReveal>
+          </section>
+
+          {/* Product Features */}
+          <section
+            className="
+              mb-12
+              grid
+              grid-cols-1
+              gap-5
+              sm:grid-cols-2
+              lg:mb-20
+              lg:grid-cols-3
+              lg:gap-7
+            "
+          >
+            {productSections.map((section, sectionIndex) => (
+              <ScrollReveal
+                key={section.id}
+                variant="fade-up"
+                delay={sectionIndex * 100}
+                className="h-full"
+              >
+                <article
+                  className="
+                    group
+                    h-full
+                    rounded-xl
+                    border
+                    border-gray-100
+                    bg-white
+                    p-5
+                    shadow-md
+                    transition-all
+                    duration-300
+                    hover:-translate-y-1
+                    hover:shadow-xl
+                    sm:p-6
+                    lg:p-7
+                  "
+                >
+                  <div
+                    className="
+                      mb-5
+                      flex
+                      h-11
+                      w-11
+                      items-center
+                      justify-center
+                      rounded-full
+                      bg-[#FFF200]/25
+                      text-[#8a7600]
+                    "
+                  >
+                    <FaCheckCircle />
+                  </div>
+
+                  <h2
+                    className="
+                      mb-5
+                      text-lg
+                      font-bold
+                      text-gray-800
+                      sm:text-xl
+                    "
+                  >
+                    {section.title}
+                  </h2>
+
+                  <ul className="space-y-4">
+                    {section.items.map((item) => (
+                      <li
+                        key={item}
+                        className="
+                          flex
+                          items-start
+                          gap-3
+                          text-sm
+                          leading-6
+                          text-gray-600
+                        "
+                      >
+                        <FaCheckCircle
+                          className="
+                            mt-1
+                            shrink-0
+                            text-[#c9a900]
+                          "
+                        />
+
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              </ScrollReveal>
+            ))}
+          </section>
+
+          {/* FAQ Section */}
+          <section className="mb-12 lg:mb-16">
+            <ScrollReveal variant="fade-up">
+              <div className="mb-7 text-center sm:mb-10">
+                <span
+                  className="
+                    inline-block
+                    rounded-full
+                    bg-[#FFF200]/20
+                    px-4 py-1.5
+                    text-xs
+                    font-bold
+                    uppercase
+                    tracking-widest
+                    text-[#8a7600]
+                  "
+                >
+                  FAQ
+                </span>
+
+                <h2
+                  className="
+                    mt-4
+                    text-2xl
+                    font-bold
+                    text-gray-800
+                    sm:text-3xl
+                  "
+                >
+                  Frequently Asked Questions
+                </h2>
+              </div>
+            </ScrollReveal>
+
+            <div
+              className="
+                mx-auto
+                max-w-4xl
+                space-y-4
+              "
+            >
+              {FAQ.map((item, index) => (
+                <ScrollReveal
+                  key={item.q}
+                  variant="fade-up"
+                  delay={index * 100}
+                >
+                  <article
+                    className="
+                      rounded-xl
+                      border
+                      border-gray-100
+                      bg-gray-50
+                      p-5
+                      transition-all
+                      duration-300
+                      hover:border-[#FFF200]
+                      hover:bg-white
+                      hover:shadow-md
+                      sm:p-6
+                    "
+                  >
+                    <h3
+                      className="
+                        text-sm
+                        font-bold
+                        leading-6
+                        text-gray-800
+                        sm:text-base
+                      "
+                    >
+                      {item.q}
+                    </h3>
+
+                    <p
+                      className="
+                        mt-2
+                        text-sm
+                        leading-6
+                        text-gray-600
+                      "
+                    >
+                      {item.a}
+                    </p>
+                  </article>
+                </ScrollReveal>
+              ))}
+            </div>
+          </section>
+
+          {/* Related Products */}
+          <RelatedProducts products={relatedFallback} />
+
+          {/* Contact Section */}
+          <ContactCTA />
         </div>
-
-        <RelatedProducts products={relatedFallback} />
-
-        <ContactCTA />
-      </section>
+      </main>
     </>
   );
 };

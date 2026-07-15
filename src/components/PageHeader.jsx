@@ -9,7 +9,12 @@ import ScrollReveal from "./ScrollReveal";
  */
 const PageHeader = ({ eyebrow, title, description, breadcrumb }) => {
   return (
-    <div className="bg-black relative pt-28 pb-14 md:pt-36 md:pb-20 px-4 text-center overflow-hidden">
+    <div className=" relative pt-28 pb-14 md:pt-36 md:pb-20 px-4 text-center overflow-hidden">
+      
+        <div className="bg-black">
+        <img src="assets/natarajan and co mrng.jpg" alt="Natarajan and co ultratech buliding solution" title="natarajanandco ultratech buliding solution "
+          className="absolute right-0 top-0 h-screen w-full object-cover opacity-50 z-[-1]"
+        /></div>
       <div className="absolute inset-0 bg-[#00000090]"></div>
       <div className="relative max-w-3xl mx-auto">
         {eyebrow && (

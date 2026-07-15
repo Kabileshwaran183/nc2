@@ -8,7 +8,7 @@ const brands = [
     logo: "/Bg/ultra.png",
     banner: "/assets/ultra buliding.jpg",
     category: "Cement & Building Solutions",
-    intro: "Authorised dealer of UltraTech, India's No.1 cement brand, for over 21 years.",
+    intro: "Authorised dealer of UltraTech, India's No.1 cement brand, for over 23 years.",
     description:
       "UltraTech is the cement and building-solutions brand we have represented the longest. As an authorised dealer based in Karaikudi, we stock UltraTech cement along with related building-solution products for residential and small commercial construction.",
     highlight: true,

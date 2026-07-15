@@ -63,7 +63,7 @@ const products = [
     brandSlug: "birla-white",
     brand: "Birla White",
     category: "White Cement",
-    image: "/Bg/ULTRATECH BG.png",
+    image: "/logo/aditya-birla-logo.png",
     shortDescription: "White cement suited for decorative and finishing applications.",
     description:
       "Birla White cement is commonly chosen for decorative work and finishing tasks where a clean, white base is preferred. We stock it as part of our Birla product range for customers with specific finishing requirements.",

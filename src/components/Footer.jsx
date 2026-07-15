@@ -153,7 +153,7 @@ const Footer = () => {
                   <GoMail className="shrink-0 text-[#FFF200]" />
                   <a
                     href="mailto:karaikudinatarajan@gmail.com"
-                    className="hover:text-[#FFF200] transition-colors duration-300 break-all"
+                    className="hover:text-[#FFF200] transition-colors duration-300 "
                   >
                     karaikudinatarajan@gmail.com
                   </a>
